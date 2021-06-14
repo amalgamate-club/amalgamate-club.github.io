@@ -37,8 +37,8 @@
 }
 .sitename {
   display: inline-block;
-  margin-right: 20px;
-  margin-left: 10px;
+  margin-right: 30px;
+  margin-left: 20px;
 }
 a.sitename, a:visited.sitename {
   color: #e0e0e0;
@@ -46,8 +46,8 @@ a.sitename, a:visited.sitename {
 .menu-items li {
   display: inline-block;
   background-position: center left;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .menu-items a {
   text-decoration: none;
