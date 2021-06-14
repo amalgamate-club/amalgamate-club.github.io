@@ -33,6 +33,7 @@
 }
 .menu-items {
   display: inline-block;
+  background-position: center left;
 }
 .sitename {
   display: inline-block;
@@ -44,6 +45,7 @@ a.sitename, a:visited.sitename {
 }
 .menu-items li {
   display: inline-block;
+  background-position: center left;
   margin-right: 10px;
   margin-left: 10px;
 }
