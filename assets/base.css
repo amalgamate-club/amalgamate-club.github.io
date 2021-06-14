@@ -21,7 +21,15 @@ h1 {
   font-size: 36px;
   line-height: 46px;
   color: #e0e0e0;
+  white-space: nowrap;
+  overflow: hidden;
 }
+
+h1 {
+  animation: animated-text 4s linear 1s 1 normal both,
+             animated-cursor 600ms linear infinite;
+}
+
 h2 {
   font-size: 24px;
   line-height: 33px;
@@ -30,15 +38,15 @@ h2 {
 p {
   margin: 20px 0;
   border-right: solid 5px rgba(255,255,255,.75);
-  white-space: nowrap;
-  overflow: hidden;
+  /* white-space: nowrap;
+  overflow: hidden; */
 }
 
-/* Animation */
+/* Animation 
 p {
   animation: animated-text 4s linear 1s 1 normal both,
              animated-cursor 600ms linear infinite;
-}
+} */
 
 /* text animation */
 
