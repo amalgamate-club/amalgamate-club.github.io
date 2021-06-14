@@ -50,6 +50,7 @@
     margin-left: 10px;
   }
   .menu-items a {
+    margin-top: 0px;
     text-decoration: none;
   }
   .show, .hide {
@@ -81,7 +82,7 @@
     .menu-items {
       display: none; 
       width: 100%;
-      margin-top: 50px;
+      margin-top: 0px;
       background-color: #5A5A5A;
     }
     .menu-items li {
