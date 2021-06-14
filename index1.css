@@ -84,7 +84,7 @@ a.sitename, a:visited.sitename {
   }
   .menu-items li {
     display: block;
-    text-align: center;
+    text-align: center left;
   }
   .show, .hide {  
     position: absolute;
