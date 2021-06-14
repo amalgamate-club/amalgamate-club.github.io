@@ -44,6 +44,7 @@
     color: #e0e0e0;
   }
   .menu-items li {
+    margin-top: 0px;
     display: inline-block;
     margin-right: 10px;
     margin-left: 10px;
