@@ -27,7 +27,7 @@ h1 {
 
 h1 {
   animation: animated-text 10s linear 1s 1 normal both,
-             animated-cursor 600ms linear infinite;
+             animated-cursor 800ms linear infinite;
 }
 
 h2 {
