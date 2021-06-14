@@ -1,0 +1,22 @@
+h1{
+    font-family: Arial;
+    text-align: center;
+}
+
+h2{
+    font-family: Arial, Helvetica;
+    text-align: center;
+}
+
+.logoDiv{
+    align-items: center;
+    justify-content: center; 
+    display: flex; 
+}
+
+.gifDiv
+{
+    align-items: center;
+    justify-content: center; 
+    display: flex; 
+}
