@@ -52,7 +52,7 @@ p {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 456px;}
+  to{width: 900px;}
 }
 
 /* cursor animations */
