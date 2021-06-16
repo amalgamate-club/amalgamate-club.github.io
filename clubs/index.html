@@ -1,53 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Student club</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Student Clubs</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!--The leaves animation-->
-        <section class="anime">
-            <h2>Student Clubs</h2>
-            <div class="set">
-                <div><img src="../img/1.png"></div>
-                <div><img src="../img/2.png"></div>
-                <div><img src="../img/3.png"></div>
-                <div><img src="../img/4.png"></div>
-                <div><img src="../img/1.png"></div>
-                <div><img src="../img/2.png"></div>
-                <div><img src="../img/3.png"></div>
-                <div><img src="../img/4.png"></div>
-            </div>
-            <div class="set set2">
-                <div><img src="../img/1.png"></div>
-                <div><img src="../img/2.png"></div>
-                <div><img src="../img/3.png"></div>
-                <div><img src="../img/4.png"></div>
-                <div><img src="../img/1.png"></div>
-                <div><img src="../img/2.png"></div>
-                <div><img src="../img/3.png"></div>
-                <div><img src="../img/4.png"></div>
+        <!--Header file includes navigation bar-->
+        <header id="header">
+            <a href="../index.html" class="logo">Atria</a>
+            <ul>
+                <li><a href="../research/index.html" onclick="toggle()">Research</a></li>
+                <li><a href="../achivements/index.html" onclick="toggle()">Achievement</a></li>
+                <li><a href="#" onclick="toggle()">Clubs</a></li>
+                <li><a href="../stu_portal/index.html" onclick="toggle()">Portal</a></li>
+                <li><a href="../coe/index.html" onclick="toggle()">COE</a></li>
+                <li><a href="../alumni/index.html" onclick="toggle()">Alumni</a></li>
+            </ul>
+            <div class="toggle" onclick="toggle()"></div><!--This line is toggling the-->
+        </header>
+        <!--End of navigation bar-->
+
+        <!--Banner aka the main picture-->
+        <section class="banner" id="home">
+            <h2><span>Student </span>Clubs</h2>
+        </section>
+        <!--End of banner-->
+
+        <!--About section-->
+        <section class="sec" id="about">
+            <div class="content">
+                <div class= "mxw800p">
+                <h3>What We Do</h3>
+                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
+                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
+                    Eu laudem mollis usu, usu stet atqui utamur te. An veri reque ius, aliquip persecuti quo ei, error evertitur percipitur mei cu. 
+                    Tation doming quaeque no mel, minim graece definiebas eam no, te duo lorem ubique molestiae. Duo perfecto mediocrem efficiantur in,
+                    ex erant aliquip intellegam has, soleat integre ius ea.</p>
+                <a href="#" class="btn">Read our story</a>
+              </div>
             </div>
         </section>
-        <!--The navigation bar-->
-        <header>
-            <a href="#" class="logo"><div><img src="../img/ait_logo_red.png" width="40" height="40"></div></a>
-            <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../research/index.html">Research</a></li>
-            <li><a href="../achivements/index.html">Achievements</a></li>
-            <li><a href="#">Clubs</a></li>
-            <li><a href="../stu_portal/index.html">Student portal</a></li>
-            <li><a href="../coe/index.html">Center of Excellence</a></li>
-            <li><a href="../alumni/index.html">Alumni</a></li>
-            </ul>
-        </header>
-        <section class="banner"></section>
+        <!--End of About section-->
+
+        <!--Cards-->
+        <section class="sec" id="services">
+            <div class="content">
+                <div class= "mxw800p">
+                <h3>What We Do</h3>
+                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
+                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
+                    Eu laudem mollis usu, usu stet atqui utamur te.</p>
+              </div>
+            <div class="services">
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="img/icon1.png">
+                    </div>
+                    <div class="content">
+                        <h2>Design</h2>
+                        <p>Example paragraph lorem ipsum dolor sit amet shit face idk why i used this but okay
+                            let me just go buy parle G parle G parle G G for gangsheetttt.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="img/icon2.png">
+                    </div>
+                    <div class="content">
+                        <h2>Development</h2>
+                        <p>Example paragraph lorem ipsum dolor sit amet shit face idk why i used this but okay
+                            let me just go buy parle G parle G parle G G for gangsheetttt.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="img/icon3.png">
+                    </div>
+                    <div class="content">
+                        <h2>Incubate</h2>
+                        <p>Example paragraph lorem ipsum dolor sit amet shit face idk why i used this but okay
+                            let me just go buy parle G parle G parle G G for gangsheetttt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!--End of cards-->
+
+        <!--stats-->
+        <section class="sec stats">
+            <div class="content">
+                <div class= "mxw800p">
+                <h3>Our Goal</h3>
+                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
+                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
+                    Eu laudem mollis usu, usu stet atqui utamur te.</p>
+              </div>
+              <div class="statsBox">
+                  <div class="box">
+                      <h2>800+</h2>
+                      <h4>Events</h4>
+                  </div>
+                  <div class="box">
+                    <h2>800+</h2>
+                    <h4>Events</h4>
+                </div>
+                <div class="box">
+                    <h2>800+</h2>
+                    <h4>Events</h4>
+                </div>
+                <div class="box">
+                    <h2>800+</h2>
+                    <h4>Events</h4>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--End of stats-->
+
+        <!--Our Clubs-->
+        <section class="sec work" id="portfolio">
+            <div class="content">
+                <div class= "mxw800p">
+                <h3>Our Clubs</h3>
+                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
+                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
+                    Eu laudem mollis usu, usu stet atqui utamur te.</p>
+              </div>
+              <div class="workBx">
+                  <div class="brand">
+                      <a href="#"><h2>Amalgamate</h2></a>
+                  </div>
+                  <div class="brand">
+                    <a href="#"><h2>Taranna</h2></a>
+                </div>
+                <div class="brand">
+                    <a href="#"><h2>Quixotics</h2></a>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--End of club-->
+
+        <!--Team-->
+        <section class="sec" id="team">
+            <div class="content">
+                <div class= "mxw800p">
+                <h3>Meet the Bigbrains</h3>
+                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
+                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
+                    Eu laudem mollis usu, usu stet atqui utamur te.</p>
+              </div>
+              <div class="teamBx">
+                  <div class="member">
+                      <div class="imgBx">
+                          <img src="img/1.jpg">
+                      </div>
+                      <div class="details">
+                          <div>
+                              <h2>Srujan GV<br><span>Founding father</span></h2>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="member">
+                    <div class="imgBx">
+                        <img src="img/2.jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Srujan GV<br><span>Founding father</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/3.jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Srujan GV<br><span>Founding father</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/4.jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Srujan GV<br><span>Founding father</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/3.jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Srujan GV<br><span>Founding father</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/3.jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Srujan GV<br><span>Founding father</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/3.jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Srujan GV<br><span>Founding father</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/3.jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Srujan GV<br><span>Founding father</span></h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--End of team-->
+
+        <!--Footer contact info-->
+        <section class="sec contact" id="contact">
+            <div class="content">
+                <div class= "mxw800p">
+                <h3>Send Us A Message</h3>
+                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
+                    ex usu error graeci recteque.</p>
+              </div>
+              <div class="contactForm">
+                  <form>
+                      <div class="row100">
+                          <div class="inputBx50">
+                              <input type="text" name="" placeholder="Full Name">
+                          </div>
+                          <div class="inputBx50">
+                            <input type="text" name="" placeholder="Email Address">
+                        </div>   
+                      </div>
+                      <div class="row100">
+                        <div class="inputBx100">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                      </div>
+                      <div class="row100">
+                          <div class="inputBx100">
+                              <input type="submit" name="" value="Send">
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="sci">
+                  <ul>
+                      <li><a href="#"><img src="img/linkedin.png"></a> </li>
+                      <li><a href="#"><img src="img/twitter.png"></a> </li>
+                  </ul>
+              </div>
+            </div>
+        </section>
+        <!--End of contact-->
+
         <script type="text/javascript">
-            window.addEventListener("scroll",function(){
+            window.addEventListener("scroll", function(){
                 var header = document.querySelector("header");
                 header.classList.toggle("sticky", window.scrollY > 0);
             })
+            function toggle(){
+                var header = document.querySelector("header");
+                header.classList.toggle("active");
+            }
         </script>
     </body>
 </html>
