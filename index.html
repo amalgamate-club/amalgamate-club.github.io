@@ -1,149 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        
-        <title>ISE DEPT</title>
-        
-        <meta name="description" content="An example of a fixed-position(sticky) top navigation bar that remains visible while the user scrolls the page.">
-        <meta name="author" content="ISE Amalgamate Team">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="assets/base.css">
-        <link rel="stylesheet" href="index1.css">
-    </head>
-    <body>
-
-        <nav class="fixed-nav-bar">
-            <div id="menu" class="menu">
-                <a href="http://atria.edu">
-                    <img alt="Atria" src="img/ait_logo.png"
-                    width="40" height="40">
-                </a>
-            
-                
-                <!-- Example responsive navigation menu  
-                <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
-                <ul class="menu-items">
-                    
-                    <li><div class="dropdown">
-                        <a href="index.html">Home</a>
-                        <div class="dropdown-content">
-                          <a href="#about">About</a>
-                          <a href="#hod_msg">HOD's Message</a>
-                          <a href="#faculty">Faculty</a>
-                          <a href="#highlights">Highlights</a>
-                          <a href="#testimonials">Testimonials</a>
-                        </div>
-                      </div></li>
-                    
-                    <li><div class="dropdown">
-                        <a href="research/index.html">Research</a>
-                        <div class="dropdown-content">
-                          <a href="research/index.html#stu_res">Student_Research</a>
-                          <a href="research/index.html#fac_res">Faculty_Research</a>
-                        </div>
-                      </div></li>
-                    
-                    <li><a href="coe/index.html">Center Of Excellence</a></li>
-                    
-                    <li><div class="dropdown">
-                        <a href="achivements/index.html">Achivements</a>
-                        <div class="dropdown-content">
-                          <a href="achivements/index.html#stu_ach">Student_Achivements</a>
-                          <a href="achivements/index.html#fac_ach">Faculty_Achivements</a>
-                        </div>
-                      </div></li>
-                    
-                    <li><div class="dropdown">
-                        <a href="stu_portal/index.html">Student Portal</a>
-                        <div class="dropdown-content">
-                          <a href="stu_portal/index.html#stu_per">Student_Performance</a>
-                          <a href="stu_portal/index.html#crs">CR's</a>
-                        </div>
-                      </div></li>
-                    
-                    <li>
-                        <div class="dropdown">
-                            <a href="clubs/index.html">Student Club</a>
-                            <div class="dropdown-content">
-                                <a href="clubs/index.html#amalgamte">Amalgamate</a>
-                                <a href="clubs/index.html#quixotics">Quixotics</a>
-                                <a href="clubs/index.html#taranna">Taranna</a>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    <li><a href="alumni/index.html">Alumni</a></li>
-                </ul> -->
-
-                <!--Header file includes navigation bar-->
-                <header id="header">
-                    <a href="../index.html" class="logo">Atria</a>
-                    <ul>
-                        <li><a href="../research/index.html" onclick="toggle()">Research</a></li>
-                        <li><a href="../achivements/index.html" onclick="toggle()">Achievement</a></li>
-                        <li><a href="#" onclick="toggle()">Clubs</a></li>
-                        <li><a href="../stu_portal/index.html" onclick="toggle()">Portal</a></li>
-                        <li><a href="../coe/index.html" onclick="toggle()">COE</a></li>
-                        <li><a href="../alumni/index.html" onclick="toggle()">Alumni</a></li>
-                    </ul>
-                    <div class="toggle" onclick="toggle()"></div><!--This line is toggling the-->
-                </header>
-                <!--End of navigation bar-->
-            </div>
-        </nav>
-
-        <section class="content">
-            <div class="description">
-                
-                <h1>Department of Information Science</h1>
-                
-                <p class="summary">Advances in Science & Technology have been the most important phenomena of our age, facilitating the development of Information Science as a foundation for human knowledge. The great impact that Information Science has on the education and training of the users on various levels has been so overwhelming breaking the geographic, social, cultural and economic barriers, Atria Institute of Technology started the Information Science & Engineering branch with focus on helping the students to make significant contributions to the Information Technology industry and to serve the society at large.</p>
-                <a class="button" href="#about">Learn More</a>
-                <a class="button" href="https://aitreg.extraaedge.com/?inst=2">Apply Now</a>
-            </div>
-        </section>
-
-        <a id="about">
-            <section class="some-related-articles">
-                <div class="buff_box"></div>
-                <h1>About</h1>
-                <p>The Information Science & Engineering department aims to impart the foundational and dedicated skills in design, programming, user interface, etc. For graduating students, exciting career opportunities are available in all these areas across the industry, government, and entrepreneurship sectors. The Information Science & Engineering department has State-of-the-art infrastructure for teaching-learning, research and consultancy. The department has MOUs with leading IT companies and research organizations. It has full equipped Laboratories and Centre of Excellence. Postgraduate and Research Programmes of the department provides ample opportunities for the students to explore emerging technologies and do result-oriented research. The placement record of the department has always been impressive.</p>
-            </section>
-        </a>
-
-        <a id="hod_msg">
-            <section class="some-related-articles">
-                <div class="buff_box"></div>
-                <h1>Message by Head Of Department (HOD)</h1>
-                <p>Our Department is so good MMMMMM.......</p>
-            </section>
-        </a>
-
-        <a id="faculty">
-            <section class="some-related-articles">
-                <div class="buff_box"></div>
-                <h1>Faculty</h1>
-                <p>Look how cute our teachers look, Awww.....</p>
-            </section>
-        </a>
-
-        <a id="highlights">
-            <section class="some-related-articles">
-                <div class="buff_box"></div>
-                <h1>Department Highlights</h1>
-                <p>Sorry, No power to show the highlihts.</p>
-            </section>
-        </a>
-
-        <a id="testimonials">
-            <section class="some-related-articles">
-                <div class="buff_box"></div>
-                <h1>Testimonials</h1>
-                <p>Oh Please!!</p>
-            </section>
-        </a>
+<head>
     
-    </body>
+    <title>Department of ISE</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+   
+    <!--Header file includes navigation bar-->
+    <header id="header">
+        <a href="../index.html" class="logo">Atria</a>
+        <ul>
+            <li><a href="../research/index.html" onclick="toggle()">Research</a></li>
+            <li><a href="../achivements/index.html" onclick="toggle()">Achievement</a></li>
+            <li><a href="#" onclick="toggle()">Clubs</a></li>
+            <li><a href="../stu_portal/index.html" onclick="toggle()">Portal</a></li>
+            <li><a href="../coe/index.html" onclick="toggle()">COE</a></li>
+            <li><a href="../alumni/index.html" onclick="toggle()">Alumni</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div><!--This line is toggling the-->
+    </header>
+    <!--End of navigation bar-->
+
+</body>
 </html>
