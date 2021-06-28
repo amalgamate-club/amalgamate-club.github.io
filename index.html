@@ -17,96 +17,447 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
-<body>
-   
-    <header class="header">
-        <nav class="navbar navbar-style">
-            <div class="container">
-                
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#micon">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+<body class="bod">
+     
+  <nav class="navbar navbar-style" id="navigation">
+      <div class="container">
+          
+          <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#micon">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              
+              <a href="http://atria.edu"><img class="logo" src="img/ait_logo_red.png"></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="micon">
+
+              <ul class="nav navbar-nav navbar-right">
+                  
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Home
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">HOD's Message</a></li>
+                          <li><a href="#">Faculty</a></li>
+                          <li><a href="#">Highlights</a></li>
+                          <li><a href="#">Testimonials</a></li>
+                      </ul>
+                  </li>
                     
-                    <a href="http://atria.edu"><img class="logo" src="img/ait_logo_red.png"></a>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Research
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Teacher Research</a></li>
+                          <li><a href="#">Student Research</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Achivements
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Teacher Achivements</a></li>
+                          <li><a href="#">Student Achivements</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Student Portal
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Student Performace</a></li>
+                          <li><a href="#">CR's</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Student Clubs
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Amalgamate</a></li>
+                          <li><a href="#">Quixotics</a></li>
+                          <li><a href="#">Tarana</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <li><a href="#">Alumni</a></li>
+                  </li>
+              
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- FIX THIS -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+
+  <div class="container marketing">
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading" id="hod">HOD's Message. <span class="text-muted">Dr. Shanthi Mahesh</span></h2>
+        <p class="lead">B.E. (Computer Science)
+          M.Tech (Information Technology)
+          Ph.D (Computer Science)
+          Area of Research: Biomedical Image Processing; Brain Computer Interface; Bigdata Analytics
+          BoE - Jain University, Visvesvaraya Technological University (VTU)
+          International Publications (18) ; International Conferences (5)
+          Received a Grant of ₹500,000 from VGST under RFTT scheme in the year 2017
+          Research Guide of 7 students pursuing their PhD under VTU
+          Total Experience: 22 Years</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><image href="https://atria.edu/assets/images/ise/SHANTHI_MAHESH.jpg" height="500px" width="500px"/></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <h2 class="featurette-heading" id="fac">Our Faculty</h2>
+
+    <div class="row">
+      
+      
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/NEHA_MANGLA.jpg" id="dp">
+
+        <h2>Dr. Neha Mangla</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/jyoti-subhash.jpg" id="dp">
+
+        <h2>Dr. Jyoti Subhash Metan</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/Manjula-H-N.jpg" id="dp">
+
+        <h2>Mrs. Manjula H N</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/SHEBA_JEBAKANI.jpg" id="dp">
+
+        <h2>Mrs. Sheba Jebakani</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!--End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/KAVITHA_PATIL.jpg" id="dp">
+
+        <h2>Mrs. Kavitha S Patil</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/SUHAS_BHYRATAE.jpg" id="dp">
+        <h2>Mr. Suhas A Bhyratae</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/VIJAYALAKSHMI.jpg" id="dp">
+        <h2>Mrs. Vijayalakshmi V</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/SRINIVAS.jpg" id="dp">
+        <h2>Mr. Srinivas B V</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/kavitha.jpg" id="dp">
+        <h2>Mrs. Kavitha G L</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/Sangamesh.jpg" id="dp">
+        <h2>Mr. Sangamesh Gama</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/OMPRAKASH.jpg" id="dp">
+        <h2>Mr. Omprakash B</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/VEERESH.jpg" id="dp">
+        <h2>Mr. Veeresh B Hatti</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/SHRUTHI.jpg" id="dp">
+        <h2>Mrs. Shruthi B</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/ISE%20-%20Prapulla%20G.jpg" id="dp">
+        <h2>Ms. Prapulla G</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/VAISHALI.jpg" id="dp">
+        <h2>Ms. Vaishali R Thakare</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/asma-begum.jpg" id="dp">
+        <h2>Mrs. Asma Begum S</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/ABHILASH.jpg" id="dp">
+        <h2>Mr. Abhilash</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/ISE%20-%20RANJITHA%20J.jpg" id="dp">
+        <h2>Ms. Ranjitha J</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/AEMI_KALARIA.jpg" id="dp">
+        <h2>Mrs. Aemi Kalaria</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/uzmataj.jpg" id="dp">
+        <h2>Mrs. Uzma Taj</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/Prof.%20Syeda%20Roshni%20Ahmed.jpg" id="dp">
+        <h2>Ms. Syeda Roshni Ahmed</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/vidhya.jpg" id="dp">
+        <h2>Ms. Vidhya Priya V</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/Uzma.jpg" id="dp">
+        <h2>Ms. Uzma Sulthana</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+
+      <!-- Start -->
+      <div class="col-lg-4">
+        <img class="faculty-dp" src="https://atria.edu/assets/images/ise/sonia-sb.jpg" id="dp">
+        <h2>Mrs. Sonia S B</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="3">View details &raquo;</a></p>
+      </div>
+      <!-- End -->
+    
+    </div><!-- /.row -->
+
+    <hr class="featurette-divider">
+
+    <h2 class="featurette-heading" id="fac">Testimonials. <span class="text-muted">Students</span></h2>
+
+    <hr class="featurette-divider">
+
+    <h2 class="featurette-heading" id="fac">Testimonials. <span class="text-muted">Teachers</span></h2>
+
+    <hr class="featurette-divider">
+
+  </div>
+
+  <section class="sec contact" id="contact">
+    <div class="content">
+        <div class= "mxw800p">
+        <h3 id="cont">Send Us A Message</h3>
+        <p id="contp">Please feel free to ping us anytime, we will get back to you shortly</p>
+      </div>
+      <div class="contactForm">
+          <form>
+              <div class="row100">
+                  <div class="inputBx50">
+                      <input type="text" name="" placeholder="Full Name">
+                  </div>
+                  <div class="inputBx50">
+                    <input type="text" name="" placeholder="Email Address">
+                </div>   
+              </div>
+              <div class="row100">
+                <div class="inputBx100">
+                    <textarea placeholder="Message"></textarea>
                 </div>
-
-                
-
-                <div class="collapse navbar-collapse" id="micon">
-
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                              Home
-                              <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">HOD's Message</a></li>
-                                <li><a href="#">Faculty</a></li>
-                                <li><a href="#">Highlights</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                            </ul>
-                        </li>
-                          
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                              Research
-                              <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Teacher Research</a></li>
-                                <li><a href="#">Student Research</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                              Achivements
-                              <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Teacher Achivements</a></li>
-                                <li><a href="#">Student Achivements</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                              Student Portal
-                              <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Student Performace</a></li>
-                                <li><a href="#">CR's</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                              Student Clubs
-                              <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Amalgamate</a></li>
-                                <li><a href="#">Quixotics</a></li>
-                                <li><a href="#">Tarana</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <li><a href="#">Alumni</a></li>
-                        </li>
-                    
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+              </div>
+              <div class="row100">
+                  <div class="inputBx100">
+                      <input type="submit" name="" value="Send">
+                  </div>
+              </div>
+          </form>
+      </div>
+      <div class="sci">
+          <ul>
+              <li><a href="#"><img src="img/linkedin.png"></a> </li>
+              <li><a href="#"><img src="img/twitter.png"></a> </li>
+          </ul>
+      </div>
+    </div>
+</section>
+<!--End of contact-->
+        
 </body>
 </html>
