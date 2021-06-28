@@ -410,3 +410,67 @@ header.sticky ul li a
 #NA{
     align-items: right;
 }
+
+.testimonials .row{
+  margin-top: 30px;
+}
+
+.testimonials .col-md-4{
+  margin: 40px auto;
+}
+
+.profile{
+  padding: 70px 10px 10px;
+  background-color: #efefef;
+}
+
+.profile img{
+  top: -60px;
+  position: absolute;
+  left: calc(50% - 60px);
+  border: 10px solid white;
+}
+
+.user{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile h3{
+  font-size: 20px;
+  margin-top: 15px;
+  color: red;
+}
+
+.testimonials .span{
+  font-size: 12px;
+}
+
+blockquote::before
+{
+  content: '\93';
+  font-size: 50px;
+  position: relative;
+  color: red;
+  line-height: 20px;
+  bottom: -15px;
+  right: 5px;
+}
+
+blockquote::after
+{
+  content: '\93';
+  font-size: 50px;
+  position: relative;
+  color: red;
+  line-height: 20px;
+  bottom: -15px;
+  left: 5px;
+}
+
+.profile:hover{
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: 0.5s;
+}
