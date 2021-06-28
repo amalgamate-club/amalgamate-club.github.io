@@ -17,7 +17,9 @@
 }
 
 .bod{
-  top: 0%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #navigation{
@@ -246,4 +248,17 @@ body {
 
 #dp{
   align-items: center;
+  box-shadow: 0 10px 15px #e4e3e3;
+}
+
+#hod-dp{
+  box-shadow: 0 10px 15px #e4e3e3;
+}
+
+.container-c
+{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  ;
 }
