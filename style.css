@@ -7,8 +7,13 @@
   height: 100vh;
 }
 
-.navbar-style{
+#navigation{
   box-shadow: 0 5px 10px #efefef;
+}
+
+#bs li{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .logo{
@@ -29,6 +34,7 @@
 #navigation a{
   text-align: center;
   color: black;
+  font-size: 20px;
 }
 
 #navigation ul li::after{
