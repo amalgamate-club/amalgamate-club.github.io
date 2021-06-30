@@ -16,24 +16,60 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(){
+        
+        window.addEventListener('scroll', function() {
+             
+          if (window.scrollY > 50) {
+            document.getElementById('navigation').classList.add('fixed-top');
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+             document.getElementById('navigation').classList.remove('fixed-top');
+             // remove padding top from body
+            document.body.style.paddingTop = '0';
+          } 
+        });
+      }); 
+      // DOMContentLoaded  end
+    </script>
+
 </head>
 <body class="bod">
 
-  <!--Header file includes navigation bar-->
-  <header id="header">
-    <a href="../index.html" class="logo">Atria</a>
-    <ul>
-        <li><a href="../research/index.html" onclick="toggle()">Research</a></li>
-        <li><a href="../achivements/index.html" onclick="toggle()">Achievement</a></li>
-        <li><a href="#" onclick="toggle()">Clubs</a></li>
-        <li><a href="../stu_portal/index.html" onclick="toggle()">Portal</a></li>
-        <li><a href="../coe/index.html" onclick="toggle()">COE</a></li>
-        <li><a href="../alumni/index.html" onclick="toggle()">Alumni</a></li>
-    </ul>
-    <div class="toggle" onclick="toggle()"></div><!--This line is toggling the-->
-  </header>
-  <!--End of navigation bar-->
-  
+  <!-- ============= COMPONENT ============== -->
+<nav id="navigation" class="navbar navbar-expand-lg navbar-dark bg-white">
+  <div class="container">
+     <a class="navbar-brand" href="#"><img class="logo" src="img/ait_logo_red.png"></a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+   <div class="collapse navbar-collapse" id="main_nav">
+   
+ 
+   <ul class="navbar-nav ms-auto" id="bs">
+     <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+     <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+     <li class="nav-item dropdown">
+       <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dropdown right </a>
+         <ul class="dropdown-menu dropdown-menu-right">
+         <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+         <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+         </ul>
+     </li>
+   </ul>
+   </div> <!-- navbar-collapse.// -->
+  </div> <!-- container-fluid.// -->
+ </nav>
+ <!-- ============= COMPONENT END// ============== -->
+ 
+
   <!--
   <nav class="navbar navbar-style" id="navigation">
       <div class="container">
@@ -49,13 +85,12 @@
           </div>
 
           <div class="collapse navbar-collapse" id="micon">
-
-              <ul class="nav navbar-nav navbar-right">
+              
+              <ul class="navbar-nav ms-auto">
                   
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                         Home
-                        <span class="caret"></span>
                       </a>
                       <ul class="dropdown-menu">
                           <li><a href="index.html">About</a></li>
@@ -69,7 +104,6 @@
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                         Research
-                        <span class="caret"></span>
                       </a>
                       <ul class="dropdown-menu">
                           <li><a href="#">Teacher Research</a></li>
@@ -80,7 +114,6 @@
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                         Achivements
-                        <span class="caret"></span>
                       </a>
                       <ul class="dropdown-menu">
                           <li><a href="#">Teacher Achivements</a></li>
@@ -91,7 +124,6 @@
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                         Student Portal
-                        <span class="caret"></span>
                       </a>
                       <ul class="dropdown-menu">
                           <li><a href="#">Student Performace</a></li>
@@ -102,7 +134,6 @@
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                         Student Clubs
-                        <span class="caret"></span>
                       </a>
                       <ul class="dropdown-menu">
                           <li><a href="#">Amalgamate</a></li>
@@ -115,11 +146,24 @@
                       <li><a href="#">Alumni</a></li>
                   </li>
               
+              </ul> 
+
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+                <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dropdown right </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                    <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                    </ul>
+                </li>
               </ul>
           </div>
       </div>
   </nav>
 -->
+
   <!-- FIX THIS -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
