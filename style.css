@@ -1,482 +1,81 @@
-*{
-  margin: 0;
-  padding: 0;
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.header{
-  height: 100vh;
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+                       url("https://drive.google.com/thumbnail?id=1YwCffwprhfQk2ydBg_WtvY1i6SI8COBL");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
 }
 
-#navigation{
-  box-shadow: 0 5px 10px #efefef;
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#bs li{
-  padding-left: 10px;
-  padding-right: 10px;
+nav img
+{
+    width: 150px;
 }
 
-.logo{
-  height: 48px;
-  padding: 2px 10px;
+.nav-links
+{
+    flex: 1;
+    text-align: right;
 }
 
-.bod{
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
 }
-
-#navigation{
-  top: 0px;
-}
-
-#navigation a{
-  text-align: center;
-  color: black;
-  font-size: 20px;
-}
-
-#navigation ul li::after{
-  content: '';
+.nav-links ul li::after
+{
+    content: '';
     width: 0%;
     height: 2px;
-    background: red;
+    background: rgb(112, 2, 2);
     display: block;
     margin: auto;
     transition: 0.5s;
 }
-
-#navigation li:hover::after{
-  width: 100%;
-}
-
-.icon-bar{
-  background: red;
-}
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  /* rtl:remove */
-  letter-spacing: -.05rem;
-}
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-/* rtl:end:ignore */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
-
-#fac{
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.contact
+.nav-links ul li:hover::after
 {
-    background: #000;
+    width: 100%;
 }
-.contact h3,
-.contact p
+
+.nav-links ul li a
 {
     color: #fff;
-}
-.contactForm
-{
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-}
-.contactForm form
-{
-    width: 100%;
-}
-.contactForm .row100
-{
-    display: flex;
-    width: 100%;
-}
-.contactForm .row100 .inputBx50
-{
-    width: 50%;
-    margin: 0 20px;
-}
-.contactForm .row100 .inputBx100
-{
-    width: 100%;
-    margin: 0 20px;
-}
-.contactForm .row100 input,
-.contactForm .row100 textarea
-{
-    position: relative;
-    border: none;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    background: transparent;
-    width: 100%;
-    padding: 10px 0;
-    outline: none;
+    text-decoration: none;
     font-size: 18px;
-    font-weight: 300;
-    margin: 20px 0;
-    resize: none;
-}
-.contactForm .row100 textarea
-{
-    height: 100px;
-}
-.contactForm .row100 input::placeholder,
-.contactForm .row100 textarea::placeholder
-{
-    color: rgba(255,255,255,0.5);
-}
-.contactForm .row100 input[type="submit"]
-{
-    background: #fff;
-    color: #000;
-    max-width: 100px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    font-weight: 500;
-}
-.sci
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0;
-}
-.sci ul
-{
-    display: flex;
-}
-.sci ul li
-{
-    list-style: none;
-}
-.sci ul li a
-{
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 30px;
-}
-.sci ul li a img
-{
-    filter: invert(1);
-    max-width: 40px;
-}
-.sci ul li a:hover img
-{
-    opacity: 0.5;
 }
 
-#cont {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 35px;
-}
-
-#contp {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.faculty-dp {
-  width: 140px;
-  height: 140px;
-}
-
-#dp{
-  align-items: center;
-  box-shadow: 0 10px 15px #e4e3e3;
-}
-
-#hod-dp{
-  box-shadow: 0 10px 15px #e4e3e3;
-}
-
-.container-c
+.text
 {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  ;
-}
-
-.toggle
-{
-    display: none;
-}
-@media (max-width: 992px)
-{
-    .toggle
-    {
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-    .toggle:before
-    {
-        content: '';
-        position: absolute;
-        top: 4px;
-        width: 100%;
-        height: 2px;
-        background: #000;
-        z-index: 1;
-        box-shadow: 0 10px 0 #000;
-        transition: 0.5s;
-    }
-    .toggle:after
-    {
-        content: '';
-        position: absolute;
-        bottom: 4px;
-        width: 100%;
-        height: 2px;
-        background: #000;
-        z-index: 1;
-        transition: 0.5s;
-    }
-header,
-header.sticky
-{
-    padding: 5px 50px;
-    background: #fff;
-}
-header ul
-{
+    width: 90%;
+    color: #fff;
     position: absolute;
-    top: 59px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
-    overflow: auto;
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
 }
-header.active ul
+.text h1
 {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    padding-top: 20px;
-}
-header.active ul li a
-{
-    display: inline-block;
-    margin: 10px 0;
-    font-size: 20px;
-}
-header .logo,
-header ul li a
-{
-    color: #000;
-}
-.banner
-{
-    background-position: center;
-}
-.banner h2
-{
-    font-size: 60px;
-    padding: 0 50px;
-}
-}
-
-/* Navigation bar*/
-header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
-    z-index: 1000;
-    transition: 0.6s;
-}
-header.sticky
-{
-    padding: 5px 100px;
-    background: #fff;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-}
-header .logo
-{
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-header ul
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header ul li
-{
-    position: relative;
-    list-style: none;
-}
-header ul li a
-{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 300;
-    transition: 0.6s;
-}
-header.sticky .logo,
-header.sticky ul li a
-{
-    color: #000;
-}
-
-#NA{
-    align-items: right;
-}
-
-.testimonials .row{
-  margin-top: 30px;
-}
-
-.testimonials .col-md-4{
-  margin: 40px auto;
-}
-
-.profile{
-  padding: 70px 10px 10px;
-  background-color: #efefef;
-}
-
-.profile img{
-  top: -60px;
-  position: absolute;
-  left: calc(50% - 60px);
-  border: 10px solid white;
-}
-
-.user{
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
-
-.profile h3{
-  font-size: 20px;
-  margin-top: 15px;
-  color: red;
-}
-
-.testimonials .span{
-  font-size: 12px;
-}
-
-blockquote::before
-{
-  content: '\93';
-  font-size: 50px;
-  position: relative;
-  color: red;
-  line-height: 20px;
-  bottom: -15px;
-  right: 5px;
-}
-
-blockquote::after
-{
-  content: '\93';
-  font-size: 50px;
-  position: relative;
-  color: red;
-  line-height: 20px;
-  bottom: -15px;
-  left: 5px;
-}
-
-.profile:hover{
-  box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
-  cursor: pointer;
-  transition: 0.5s;
+    font-size: 35px;
 }
