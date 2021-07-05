@@ -83,3 +83,14 @@ nav img
 {
     font-size: 25px;
 }
+
+.row
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.ach-pics img
+{
+    width: 250px;
+}
