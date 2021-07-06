@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="ankit.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"><img src="img/ait_logo.png"></a>
+            <div class="navlinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Center Of Excellence</a></li>
+                    <li><a href="#">Achievements</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Student Club</a></li>
+                    <li><a href="#">Alumni</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="textbox">
+            <h1>Student Portal</h1>
+            <p> <i>“If you are not willing to risk the usual you will have to settle for the ordinary.”</i>  —Jim Rohn</p>
+        </div>
+    </section>
+
+
+    <!-- -------------------Course--------------------->
+    <section class="year">
+        <h1>Select your Year</h1>
+        <p>Select your year to know the top students, Class Representatives, Attendance and IA marks.</p>
+        <div class="row">
+            <div class="workBx">
+                <div class="brand">
+                    <a href="ankit2ndyear.html">
+                        <h2>2nd Year</h2>
+                    </a>
+                </div>
+                <div class="brand">
+                    <a href="3rdyear.html">
+                        <h2>3rd Year</h2>
+                    </a>
+                </div>
+                <div class="brand">
+                    <a href="4thyear.html">
+                        <h2>4th Year</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We ajklfnaiupwefoakwnefijabnofjpwefgoibrgfianionfoifobawiurghoau</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+
+    <!-- -------------------JavaScript for Toggle Menu--------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
