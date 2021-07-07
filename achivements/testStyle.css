@@ -1,0 +1,60 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#navbar_top
+{
+    padding: 20px;
+    font-size: 20px;
+}
+
+#logo
+{
+    font-weight: 800;
+}
+
+.fixed-top 
+{
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .3s;
+}
+
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+                       url("https://drive.google.com/thumbnail?id=1YwCffwprhfQk2ydBg_WtvY1i6SI8COBL");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.text1
+{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text1 h1
+{
+    font-size: 50px;
+}
+.text1 p
+{
+    font-size: 25px;
+}
+
+.row1
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
