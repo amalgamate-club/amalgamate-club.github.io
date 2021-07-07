@@ -7,6 +7,7 @@
 {
     padding: 20px;
     font-size: 20px;
+    position: top;
 }
 
 #logo
@@ -19,6 +20,7 @@
     top: -40px;
     transform: translateY(40px);
     transition: transform .3s;
+    position: top;
 }
 
 .header
