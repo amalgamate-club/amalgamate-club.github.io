@@ -1,28 +1,3 @@
-*
-{
-    margin: 0;
-    padding: 0;
-}
-#navbar_top
-{
-    padding: 20px;
-    font-size: 20px;
-    position: top;
-}
-
-#logo
-{
-    font-weight: 800;
-}
-
-.fixed-top 
-{
-    top: -40px;
-    transform: translateY(40px);
-    transition: transform .3s;
-    position: top;
-}
-
 .header
 {
     min-height: 100vh;
@@ -45,18 +20,37 @@
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.text1 h1
+.text h1
 {
     font-size: 50px;
 }
-.text1 p
+.text p
 {
     font-size: 25px;
 }
 
-.row1
+.row
 {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+}
+.ach-pics img
+{
+    width: 250px;
+}
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+ #img_img img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
