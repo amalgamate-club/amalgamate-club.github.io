@@ -20,13 +20,13 @@
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.text h1
+.text1 h1
 {
-    font-size: 50px;
+    font-size: 150px;
 }
-.text p
+.text1 p
 {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .row
