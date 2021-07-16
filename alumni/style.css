@@ -14,16 +14,30 @@ body{
 .heading{
   font-size: 60px;
   color: white;
+  text-align: center;
 }
 .heading span {
   font-style: italic;
-font-size: 30px;
+  font-size: 60px;
 }
 .profiles {
   display: flex;
   justify-content: space-around;
   margin: 20px 80px;
 }
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
 .profile {
   flex-basis: 260px;
 }
