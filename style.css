@@ -104,3 +104,13 @@ section img{
     
     z-index: 9;
 }
+
+
+
+#cards {
+    transition: box-shadow .3s;
+}
+
+#cards:hover {
+box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
