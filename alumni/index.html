@@ -1,89 +1,313 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        
-        <title>ISE DEPT</title>
-        
-        <meta name="description" content="An example of a fixed-position(sticky) top navigation bar that remains visible while the user scrolls the page.">
-        <meta name="author" content="ISE Amalgamate Team">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="/assets/base.css">
-        <link rel="stylesheet" href="/index1.css">
-    </head>
-    <body>
+<!DOCTYPE HTML>
+<html lang="en">
 
-        <nav class="fixed-nav-bar">
-            <div id="menu" class="menu">
-                <a href="http://atria.edu">
-                    <img alt="Atria" src="/img/ait_logo.png"
-                    width="40" height="40">
-                </a>
-                
-                <!-- Example responsive navigation menu  -->
-                <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
-                <ul class="menu-items">
-                    
-                    <li><div class="dropdown">
-                        <a href="/index.html">Home</a>
-                        <div class="dropdown-content">
-                          <a href="/index.html#about">About</a>
-                          <a href="/index.html#hod_msg">HOD's Message</a>
-                          <a href="/index.html#faculty">Faculty</a>
-                          <a href="/index.html#highlights">Highlights</a>
-                          <a href="/index.html#testimonials">Testimonials</a>
-                        </div>
-                      </div></li>
-                    
-                    <li><div class="dropdown">
-                        <a href="/research/index.html">Research</a>
-                        <div class="dropdown-content">
-                          <a href="/research/index.html#stu_res">Student_Research</a>
-                          <a href="/research/index.html#fac_res">Faculty_Research</a>
-                        </div>
-                      </div></li>
-                    
-                    <li><a href="/coe/index.html">Center Of Excellence</a></li>
-                    
-                    <li><div class="dropdown">
-                        <a href="/achivements/index.html">Achivements</a>
-                        <div class="dropdown-content">
-                          <a href="/achivements/index.html#stu_ach">Student_Achivements</a>
-                          <a href="/achivements/index.html#fac_ach">Faculty_Achivements</a>
-                        </div>
-                      </div></li>
-                    
-                    <li><div class="dropdown">
-                        <a href="/stu_portal/index.html">Student Portal</a>
-                        <div class="dropdown-content">
-                          <a href="/stu_portal/index.html#stu_per">Student_Performance</a>
-                          <a href="/stu_portal/index.html#crs">CR's</a>
-                        </div>
-                      </div></li>
-                    
-                    <li>
-                        <div class="dropdown">
-                            <a href="/clubs/index.html">Student Club</a>
-                            <div class="dropdown-content">
-                                <a href="/clubs/index.html#amalgamte">Amalgamate</a>
-                                <a href="/clubs/index.html#quixotics">Quixotics</a>
-                                <a href="/clubs/index.html#taranna">Taranna</a>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    <li><a href="/alumni/index.html">Alumni</a></li>
-                </ul>
-            </div>
-        </nav>
+<head>
+	<meta charset="utf-8">
 
-        <a id="alumni">
-            <section class="some-related-articles">
-                <div class="buff_box"></div>
-                <h1>Alumni</h1>
-            </section>
-        </a>
 
-    </body>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- ============= Nav Bar Start ============== -->
+	<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="https://atria.edu/assets/images/logo-ait-v1.png" id="logo"><img
+					src="https://atria.edu/assets/images/logo-ait-v1.png" height="50px">A T R I A </a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+
+
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Research </a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a class="dropdown-item" href="#"> Student Research </a></li>
+							<li><a class="dropdown-item" href="#"> Teacher Research </a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Achievement </a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a class="dropdown-item" href="#"> Student Achievement </a></li>
+							<li><a class="dropdown-item" href="#"> Teacher Achievement </a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Clubs </a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a class="dropdown-item" href="#"> Amalgamate </a></li>
+							<li><a class="dropdown-item" href="#"> Quxotics </a></li>
+							<li><a class="dropdown-item" href="#"> Tarana </a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Portal </a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a class="dropdown-item" href="#"> CRs </a></li>
+							<li><a class="dropdown-item" href="#"> Marks </a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> COE </a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Alumni</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a class="dropdown-item" href="#"> CRs </a></li>
+							<li><a class="dropdown-item" href="#"> Marks </a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</div> <!-- navbar-collapse.// -->
+		</div> <!-- container-fluid.// -->
+	</nav>
+
+	<style>
+		#navbar_top {
+			padding: 20px;
+			font-size: 20px;
+		}
+
+		#logo {
+			font-weight: 800;
+		}
+
+		.fixed-top {
+			top: -40px;
+			transform: translateY(40px);
+			transition: transform .3s;
+		}
+	</style>
+
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function () {
+
+			window.addEventListener('scroll', function () {
+
+				if (window.scrollY > 200) {
+					document.getElementById('navbar_top').classList.add('fixed-top');
+					// add padding top to show content behind navbar
+					navbar_height = document.querySelector('.navbar').offsetHeight;
+					document.body.style.paddingTop = navbar_height + 'px';
+				} else {
+					document.getElementById('navbar_top').classList.remove('fixed-top');
+					// remove padding top from body
+					document.body.style.paddingTop = '0';
+				}
+			});
+		});
+	</script>
+	<!-- ============= Nav Bar End ============== -->
+
+	<!-- ============= Main Page Start ============== -->
+
+	<!--Your Content here-->
+
+	<body>
+		<div class="container">
+			<h1 class="heading"><span>meet</span>our team</h1>
+			<div class="profiles">
+
+				<div class="profile">
+					<img src="/alumni/images/swetha ramesh.png" class="profile-img">
+					<h3 class="user-name">william</h3>
+					<h5>creative director</h5>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem minus veritatis quam
+						necessitatibus possimus ratione deserunt ipsam enim quia corporis?</p>
+				</div>
+				<div class="profile">
+					<img src="/alumni/images/surya mahesh.png" class="profile-img">
+					<h3 class="user-name">william</h3>
+					<h5>creative director</h5>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem minus veritatis quam
+						necessitatibus possimus ratione deserunt ipsam enim quia corporis?</p>
+				</div>
+				<div class="profile">
+					<img src="/alumni/images/prateeksha.jpg" class="profile-img">
+					<h3 class="user-name">william</h3>
+					<h5>creative director</h5>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem minus veritatis quam
+						necessitatibus possimus ratione deserunt ipsam enim quia corporis?</p>
+				</div>
+				<br>
+				<div class="profile">
+					<img src="/alumni/images/slt.ishu tiwari.png" class="profile-img">
+					<h3 class="user-name">william</h3>
+					<h5>creative director</h5>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem minus veritatis quam
+						necessitatibus possimus ratione deserunt ipsam enim quia corporis?</p>
+				</div>
+				<div class="profile">
+					<img src="/alumni/images/owais ahmed.png" class="profile-img">
+					<h3 class="user-name">william</h3>
+					<h5>creative director</h5>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem minus veritatis quam
+						necessitatibus possimus ratione deserunt ipsam enim quia corporis?</p>
+				</div>
+				<div class="profile">
+					<img src="/alumni/images/saba khanum.png" class="profile-img">
+					<h3 class="user-name">william</h3>
+					<h5>creative director</h5>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem minus veritatis quam
+						necessitatibus possimus ratione deserunt ipsam enim quia corporis?</p>
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+	</body>
+
+
+
+	<!-- ============= Main Pager End ============== -->
+
+	<!-- ============= Footer Start ============== -->
+
+	<footer class="bg-dark text-white pt-5 pb-4">
+
+		<div class="container text-center text-md-left">
+
+			<div class="row text-center text-md-left">
+
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Department of ISE</h5>
+					<p>The department of ISE motivates all the students to adapt Hands on work experience.</p>
+
+				</div>
+
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Others</h5>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> Research</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> Achievement</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> Clubs</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> Portal</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> COE</a>
+					</p>
+
+				</div>
+
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+					<p>
+						<a href="https://atria.edu/assets/pdf/Academic-calendar-2020-21-2nd-to-8th-Semester.pdf"
+							class="text-white" style="text-decoration: none;"> Academic Calendar</a>
+					</p>
+					<p>
+						<a href="https://ait.academiaerp.com/" class="text-white" style="text-decoration: none;">
+							ERP</a>
+					</p>
+					<p>
+						<a href="https://atria.edu/admissions.php#overview" class="text-white"
+							style="text-decoration: none;">Admissions</a>
+					</p>
+					<p>
+						<a href="https://atria.edu/grievance.php" class="text-white" style="text-decoration: none;">
+							Grievance Cell</a>
+					</p>
+				</div>
+
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+					<p>
+						<i class="fas fa-home mr-3"></i> ASKB Campus, 1st Main Rd, Ags Colony, Anandnagar, Hebbal,
+						Bengaluru, Karnataka 560024
+					</p>
+					<p>
+						<i class="fas fa-envelope mr-3"></i> ise@atria.edu
+					</p>
+					<p>
+						<i class="fas fa-phone mr-3"></i> +91 70 9032 9032
+					</p>
+
+				</div>
+
+			</div>
+
+			<hr class="mb-4">
+
+			<div class="row align-items-center">
+
+				<div class="col-md-7 col-lg-8">
+					<p> Copyright ©2020 All rights reserved by:
+						<a href="#" style="text-decoration: none;">
+							<strong class="text-warning">Dept. of ISE</strong>
+						</a> | Website Designed by team <a href="#" style="text-decoration: none;">
+							<strong class="text-warning">Amalgamate</strong>
+						</a>
+					</p>
+
+
+				</div>
+
+				<div class="col-md-5 col-lg-4">
+					<div class="text-center text-md-right">
+
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-twitter"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-google-plus"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-linkedin-in"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-youtube"></i></a>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</footer>
+
+	<!-- ============= Footer End ============== -->
+
+</body>
+
 </html>
