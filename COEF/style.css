@@ -55,8 +55,9 @@ header ul
 {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items: right;
+    padding-left: 500px;
 }
 header ul li
 {
@@ -123,15 +124,14 @@ header.sticky ul li a
 {
     width: 70px;
     position: absolute;
-    top: 3%;
-    left: 9%;
+    top: 14%;
+    left: 7%;
 }
 .dept1
 {
     position: absolute;
-    top: 5%;
-    left: 14%;
-
+    top: 17%;
+    left: 12%;
 
 }
 .bigd
@@ -352,8 +352,8 @@ header ul li a
     display: flex;
     justify-content: center;
     align-items: centre;
+    padding: 40px 0;
     flex-wrap: wrap;
-    margin-top: 50px;
 }
 .containerm
 {
@@ -368,7 +368,7 @@ header ul li a
 
     padding-left: 50%;
     font-size: 20px;
-    line-height: 2em;
+    line-height: 1.5em;
 
 }
 .container .box
