@@ -114,3 +114,13 @@ section img{
 #cards:hover {
 box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
+
+#btn1 {
+    margin:auto;
+    display:block;
+}
+
+#carouselExampleControls {
+    margin:auto;
+    display:block;
+}
