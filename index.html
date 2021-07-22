@@ -214,7 +214,11 @@
         <br>
         <p><a class="btn btn-dark" href="https://atria.edu/assets/pdf/ise/profiles/Manjula%20H%20N-%20One%20Page%20Profile.pdf" role="button">View Profile &raquo;</a></p>
       </div>
+    </div>
 
+    
+
+    <div class="row collapse" id="fac_img1">
       <div class="col-lg-4" >
         <img class="rounded-circle" src="https://atria.edu/assets/images/ise/SHEBA_JEBAKANI.jpg" alt="Generic placeholder image" width="140" height="140">
         <h2>Mrs. Sheba Jebakani</h2>
@@ -424,10 +428,15 @@
         <br>
         <p><a class="btn btn-dark" href="https://atria.edu/assets/pdf/ise/profiles/Sonia-%20One%20Page%20Profile.pdf" role="button">View Profile &raquo;</a></p>
       </div>
-
-
     
     </div>
+
+    
+    <button class="btn btn-white col-md-6 text-center"  id="btn1" type="button" data-toggle="collapse" data-target="#fac_img1" aria-expanded="false" aria-controls="collapseExample" style="align-items: center; border-color: black;">
+      View More
+    </button>
+    
+  
 
     <!-- ============= FACULTY PROFILES END ============== -->
 
@@ -784,7 +793,17 @@
       mount_bk.style.top = value * 0.5 + 'px';
       mount_fr.style.top = value * 0 + 'px';
       txt.style.marginRight = value * 4 + 'px';
-    })
+    });
+
+    jQuery(function($) {
+    $('#btn1').on('click', function() {
+        var $el = $(this),
+          textNode = this.lastChild;
+        
+        textNode.nodeValue = ' View ' + ($el.hasClass('showFire') ? 'More' : 'Less')
+        $el.toggleClass('showFire');
+      });
+    });
 
     
   </script>
