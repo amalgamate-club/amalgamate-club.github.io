@@ -20,6 +20,11 @@
     transform: translate(-50%,-50%);
     text-align: center;
 }
+
+#s1 
+{
+    color: black;
+}
 .text1 h1
 {
     font-size: 120px;
