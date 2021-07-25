@@ -1,3 +1,4 @@
+/*-----Gallery starts----*/
 *{
     margin: 0;
     padding: 0;
@@ -88,7 +89,7 @@ label
     margin: 0 10px;
     line-height: 60px;
     font-size: 18px;
-    color: gray;
+    color:gray;
     cursor: pointer;
     transition: .5s;
 }
@@ -108,7 +109,7 @@ label:hover{
     position: relative;
     height: 230px;
     border-radius: 10px;
-    box-shadow: 3px 3px 4px rgb(163, 163, 163);
+    box-shadow: 3px 3px 4px rgba(163, 163, 163, 0.486);
     cursor: pointer;
     transition: .5s;
 }
@@ -119,6 +120,8 @@ label:hover{
     border-radius: 10px;
     transition: .5s;
 }
+
+
 
 .pic::before
 {
@@ -195,3 +198,84 @@ label:hover{
     position:absolute;
     transition: .5s;
 }
+/*--section .photo-gallery .tech .active
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}-*/
+/*-----Gallery ends----*/
+
+/* ----faculty section----*/
+.teamBx
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.teamBx .member
+{
+    position: relative;
+    background: rgb(95, 90, 90);
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamBx .member .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+}
+.teamBx .member .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+.teamBx .member .details
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 125%;
+    height: 125%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 0;
+}
+.teamBx .member:hover .details
+{
+    opacity: 1;
+}
+.teamBx .member .details h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.teamBx .member .details h2 span
+{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+/* ----faculty section ends----*/
