@@ -16,25 +16,17 @@ body{
 
 
 .container{
-  margin: 20px 40px;
+  margin: 20px 60px;
   color: rgb(10, 10, 10);
 }
 .heading{
   font-size: 60px;
-<<<<<<< HEAD
   color: rgb(0, 0, 0);
-=======
-  color: white;
->>>>>>> 53d16f4d005f3b3c4e9afc6d9d820332d81b27ad
   text-align: center;
 }
 .heading span {
   font-style: italic;
-<<<<<<< HEAD
   font-size: 30px;
-=======
-  font-size: 60px;
->>>>>>> 53d16f4d005f3b3c4e9afc6d9d820332d81b27ad
 }
 .profiles {
   display: flex;
@@ -43,7 +35,6 @@ body{
   
 }
 
-<<<<<<< HEAD
 .profiles {
   display: flex;
   justify-content: space-around;
@@ -56,24 +47,13 @@ body{
   flex: 33.33%;
   padding: 5px;
   
-=======
-.row {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 80px;
-}
-
-.column {
-  flex: 33.33%;
-  padding: 5px;
->>>>>>> 53d16f4d005f3b3c4e9afc6d9d820332d81b27ad
 }
 
 
 .profile {
   flex-basis: 260px;
   border-style: ridge;
-  border: 3.8px solid rgb(221, 221, 221);
+  border: 0.2px solid rgb(156, 153, 153);
   border-radius: 5px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -81,6 +61,8 @@ body{
   margin-left: 10px;
   padding-top: 45px;
   padding-right: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
  
   padding-left: 80px;
 }
@@ -90,11 +72,15 @@ body{
   border-radius: 50%;
   filter: grayscale(100%);
   cursor: pointer;
-  transition: 400ms;
+  transition: 400ms;transition: 1s ease;
 }
 .profile:hover .profile-img
 {
  filter: grayscale(0); 
+ -webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
 }
 .user-name {
   margin-top: 30px;
@@ -219,9 +205,9 @@ svg {
 
 
 h1{
-    font-size: 1.5em;
-    font-weight:normal;
-    text-align: center;
+  font-size: 1.5em;
+  font-weight:normal;
+  text-align: center;
 }
 
 /* title styles */
@@ -282,6 +268,5 @@ img{
 
 }
 
-LOGONAME
-
+notable alumnis
 
