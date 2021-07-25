@@ -1,296 +1,483 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width , initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>Student Clubs</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--Header file includes navigation bar-->
-        <header id="header">
-            <a href="../index.html" class="logo">Atria</a>
-            <ul>
-                <li><a href="../research/index.html" onclick="toggle()">Research</a></li>
-                <li><a href="../achivements/index.html" onclick="toggle()">Achievement</a></li>
-                <li><a href="#" onclick="toggle()">Clubs</a></li>
-                <li><a href="../stu_portal/index.html" onclick="toggle()">Portal</a></li>
-                <li><a href="../coe/index.html" onclick="toggle()">COE</a></li>
-                <li><a href="../alumni/index.html" onclick="toggle()">Alumni</a></li>
-            </ul>
-            <div class="toggle" onclick="toggle()"></div><!--This line is toggling the-->
-        </header>
-        <!--End of navigation bar-->
+<head>
+	<meta charset="utf-8">
+	<title>Student Clubs!</title>
 
-        <!--Banner aka the main picture-->
-        <section class="banner" id="home">
-            <h2><span>Student </span>Clubs</h2>
-        </section>
-        <!--End of banner-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-        <!--About section-->
-        <section class="sec" id="about">
-            <div class="content">
-                <div class= "mxw800p">
-                <h3>What We Do</h3>
-                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
-                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
-                    Eu laudem mollis usu, usu stet atqui utamur te. An veri reque ius, aliquip persecuti quo ei, error evertitur percipitur mei cu. 
-                    Tation doming quaeque no mel, minim graece definiebas eam no, te duo lorem ubique molestiae. Duo perfecto mediocrem efficiantur in,
-                    ex erant aliquip intellegam has, soleat integre ius ea.</p>
-                <a href="#" class="btn">Read our story</a>
-              </div>
-            </div>
-        </section>
-        <!--End of About section-->
+    <link rel="stylesheet" href="style.css">
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/carousel/">
 
-        <!--Cards-->
-        <section class="sec" id="services">
-            <div class="content">
-                <div class= "mxw800p">
-                <h3>What We Do</h3>
-                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
-                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
-                    Eu laudem mollis usu, usu stet atqui utamur te.</p>
-              </div>
-            <div class="services">
-                <div class="box">
-                    <div class="iconBx">
-                        <img src="img/icon1.png">
-                    </div>
-                    <div class="content">
-                        <h2>Design</h2>
-                        <p>Example paragraph lorem ipsum dolor sit amet shit face idk why i used this but okay
-                            let me just go buy parle G parle G parle G G for gangsheetttt.
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="iconBx">
-                        <img src="img/icon2.png">
-                    </div>
-                    <div class="content">
-                        <h2>Development</h2>
-                        <p>Example paragraph lorem ipsum dolor sit amet shit face idk why i used this but okay
-                            let me just go buy parle G parle G parle G G for gangsheetttt.
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="iconBx">
-                        <img src="img/icon3.png">
-                    </div>
-                    <div class="content">
-                        <h2>Incubate</h2>
-                        <p>Example paragraph lorem ipsum dolor sit amet shit face idk why i used this but okay
-                            let me just go buy parle G parle G parle G G for gangsheetttt.
-                        </p>
-                    </div>
-                </div>
-            </div>
+</head>
+<body onload="myFunction()">
+
+  <div id="loading"></div>
+
+	<!-- ============= Nav Bar Start ============== -->
+	<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+		<a class="navbar-brand" href="https://atria.edu" id="logo" ><img src="https://atria.edu/assets/images/logo-ait-v1.png" height="50px">A T R I A </a>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+	<div class="collapse navbar-collapse" id="main_nav">
+		
+
+		<ul class="navbar-nav ms-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="../research/index.html" data-bs-toggle="dropdown"> Research </a>
+				<ul class="dropdown-menu dropdown-menu-right">
+				<li><a class="dropdown-item" href="../research/index.html"> Student Research </a></li>
+				<li><a class="dropdown-item" href="../research/index.html"> Teacher Research </a></li>
+				</ul>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="" data-bs-toggle="dropdown"> Achievement </a>
+				<ul class="dropdown-menu dropdown-menu-right">
+				<li><a class="dropdown-item" href="../achivements/test.html"> Student Achievement </a></li>
+				<li><a class="dropdown-item" href="#"> Teacher Achievement </a></li>
+				</ul>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Clubs </a>
+				<ul class="dropdown-menu dropdown-menu-right">
+				<li><a class="dropdown-item" href="#"> Amalgamate </a></li>
+				<li><a class="dropdown-item" href="#"> Quxotics </a></li>
+				<li><a class="dropdown-item" href="#"> Tarana </a></li>
+				</ul>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="../stu_portal/ankit.html" data-bs-toggle="dropdown"> Portal </a>
+				<ul class="dropdown-menu dropdown-menu-right">
+				<li><a class="dropdown-item" href="../stu_portal/ankit.html"> CRs </a></li>
+				<li><a class="dropdown-item" href="../stu_portal/ankit.html"> Marks </a></li>
+				</ul>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="../COEF/index.html" > COE </a>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="../alumni/index.html" data-bs-toggle="dropdown"> Alumni</a>
+				<ul class="dropdown-menu dropdown-menu-right">
+				<li><a class="dropdown-item" href="../alumni/index.html"> CRs </a></li>
+				<li><a class="dropdown-item" href="../alumni/index.html"> Marks </a></li>
+				</ul>
+			</li>
+		</ul>
+
+	</div> <!-- navbar-collapse.// -->
+	</div> <!-- container-fluid.// -->
+	</nav>
+
+	<style>
+		#navbar_top{
+			padding: 20px;
+			font-size: 20px;
+		}
+
+		#logo{
+			font-weight: 800;
+		}
+
+		.fixed-top {
+			top: -40px;
+			transform: translateY(40px);
+			transition: transform .3s;
+		}
+	</style>
+
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(){
+			
+			window.addEventListener('scroll', function() {
+			
+				if (window.scrollY > 200) {
+					document.getElementById('navbar_top').classList.add('fixed-top');
+					// add padding top to show content behind navbar
+					navbar_height = document.querySelector('.navbar').offsetHeight;
+					document.body.style.paddingTop = navbar_height + 'px';
+				} else {
+					document.getElementById('navbar_top').classList.remove('fixed-top');
+					// remove padding top from body
+					document.body.style.paddingTop = '0';
+				} 
+			});
+		}); 
+	</script>
+	<!-- ============= Nav Bar End ============== -->
+
+    <!--Banner aka the main picture-->
+    <section class="banner" id="home">
+        <h2><span>Student </span>Clubs</h2>
+    </section>
+    <!--End of banner-->
+
+    <!--About section-->
+    <section class="sec" id="about">
+        <div class="content">
+            <div class= "mxw800p">
+            <h3>What We Do</h3>
+            <p>With an objective of help students to pursue their hobbies and interests and to bring people together the student clubs are created at the Institute. As a club member one knows about one’s self, one’s interests and one’s goals. Students can unravel their strengths like multitasking, organization skills, team Building skills, leadership skills and service mindedness. They can also add skills to their repertoire. The clubs also help in pursuing an old hobby. </p>
+            <a href="#" class="btn">Read our story below</a>
           </div>
-        </section>
-        <!--End of cards-->
+        </div>
+    </section>
+    <!--End of About section-->
 
-        <!--stats-->
-        <section class="sec stats">
-            <div class="content">
-                <div class= "mxw800p">
-                <h3>Our Goal</h3>
-                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
-                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
-                    Eu laudem mollis usu, usu stet atqui utamur te.</p>
-              </div>
-              <div class="statsBox">
-                  <div class="box">
-                      <h2>800+</h2>
-                      <h4>Events</h4>
-                  </div>
-                  <div class="box">
-                    <h2>800+</h2>
-                    <h4>Events</h4>
+    <!--Cards-->
+    <section class="sec" id="services">
+        <div class="content">
+            <div class= "mxw800p">
+            <h3>Why Clubs</h3>
+            <p>Association of students with clubs help in showcasing ones domain interest, balance between work and hobbies. Activities organized/participated as a club member looks good on the resume.
+			</p>
+          </div>
+        <div class="services">
+            <div class="box">
+                <div class="iconBx">
+                    <img src="img/icon1.png">
                 </div>
-                <div class="box">
-                    <h2>800+</h2>
-                    <h4>Events</h4>
+                <div class="content">
+                    <h2>Design</h2>
+                    <p>Designing goes hand in hand with creativity. When we explore various ideas
+						designing and framing a structure is mandatory.
+                    </p>
                 </div>
-                <div class="box">
-                    <h2>800+</h2>
-                    <h4>Events</h4>
-                </div>
-              </div>
             </div>
-        </section>
-        <!--End of stats-->
-
-        <!--Our Clubs-->
-        <section class="sec work" id="portfolio">
-            <div class="content">
-                <div class= "mxw800p">
-                <h3>Our Clubs</h3>
-                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
-                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
-                    Eu laudem mollis usu, usu stet atqui utamur te.</p>
-              </div>
-              <div class="workBx">
-                  <div class="brand">
-                      <a href="#"><h2>Amalgamate</h2></a>
-                  </div>
-                  <div class="brand">
-                    <a href="#"><h2>Taranna</h2></a>
+            <div class="box">
+                <div class="iconBx">
+                    <img src="img/icon2.png">
                 </div>
-                <div class="brand">
-                    <a href="#"><h2>Quixotics</h2></a>
+                <div class="content">
+                    <h2>Development</h2>
+                    <p>Once student realise they're talent we focus on developing it further by various means.
+                    </p>
                 </div>
-              </div>
             </div>
-        </section>
-        <!--End of club-->
-
-        <!--Team-->
-        <section class="sec" id="team">
-            <div class="content">
-                <div class= "mxw800p">
-                <h3>Meet the Bigbrains</h3>
-                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
-                    ex usu error graeci recteque. Eam elitr quando legere ea, et ius eros cibo, sed aperiri aliquid labores ex.
-                    Eu laudem mollis usu, usu stet atqui utamur te.</p>
-              </div>
-              <div class="teamBx">
-                  <div class="member">
-                      <div class="imgBx">
-                          <img src="img/1.jpg">
-                      </div>
-                      <div class="details">
-                          <div>
-                              <h2>Srujan GV<br><span>Founding father</span></h2>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="member">
-                    <div class="imgBx">
-                        <img src="img/2.jpg">
-                    </div>
-                    <div class="details">
-                        <div>
-                            <h2>Srujan GV<br><span>Founding father</span></h2>
-                        </div>
-                    </div>
+            <div class="box">
+                <div class="iconBx">
+                    <img src="img/icon3.png">
                 </div>
-                <div class="member">
-                    <div class="imgBx">
-                        <img src="img/3.jpg">
-                    </div>
-                    <div class="details">
-                        <div>
-                            <h2>Srujan GV<br><span>Founding father</span></h2>
-                        </div>
-                    </div>
+                <div class="content">
+                    <h2>Incubate</h2>
+                    <p>Networking opportunities being major benefit. Club members develop bond among themselves which help in growing their careers. 
+                    </p>
                 </div>
-                <div class="member">
-                    <div class="imgBx">
-                        <img src="img/4.jpg">
-                    </div>
-                    <div class="details">
-                        <div>
-                            <h2>Srujan GV<br><span>Founding father</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="member">
-                    <div class="imgBx">
-                        <img src="img/3.jpg">
-                    </div>
-                    <div class="details">
-                        <div>
-                            <h2>Srujan GV<br><span>Founding father</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="member">
-                    <div class="imgBx">
-                        <img src="img/3.jpg">
-                    </div>
-                    <div class="details">
-                        <div>
-                            <h2>Srujan GV<br><span>Founding father</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="member">
-                    <div class="imgBx">
-                        <img src="img/3.jpg">
-                    </div>
-                    <div class="details">
-                        <div>
-                            <h2>Srujan GV<br><span>Founding father</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="member">
-                    <div class="imgBx">
-                        <img src="img/3.jpg">
-                    </div>
-                    <div class="details">
-                        <div>
-                            <h2>Srujan GV<br><span>Founding father</span></h2>
-                        </div>
-                    </div>
-                </div>
-              </div>
             </div>
-        </section>
-        <!--End of team-->
+        </div>
+      </div>
+    </section>
+    <!--End of cards-->
 
-        <!--Footer contact info-->
-        <section class="sec contact" id="contact">
-            <div class="content">
-                <div class= "mxw800p">
-                <h3>Send Us A Message</h3>
-                <p>Cu iusto complectitur sit. Malis epicurei dignissim ut his, graece voluptaria ne nec,
-                    ex usu error graeci recteque.</p>
-              </div>
-              <div class="contactForm">
-                  <form>
-                      <div class="row100">
-                          <div class="inputBx50">
-                              <input type="text" name="" placeholder="Full Name">
-                          </div>
-                          <div class="inputBx50">
-                            <input type="text" name="" placeholder="Email Address">
-                        </div>   
-                      </div>
-                      <div class="row100">
-                        <div class="inputBx100">
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                      </div>
-                      <div class="row100">
-                          <div class="inputBx100">
-                              <input type="submit" name="" value="Send">
-                          </div>
-                      </div>
-                  </form>
-              </div>
-              <div class="sci">
-                  <ul>
-                      <li><a href="#"><img src="img/linkedin.png"></a> </li>
-                      <li><a href="#"><img src="img/twitter.png"></a> </li>
-                  </ul>
-              </div>
-            </div>
-        </section>
-        <!--End of contact-->
+	<!--stats-->
+	<section class="sec stats">
+		<div class="content">
+			<div class= "mxw800p">
+			<h3>Our Goal</h3>
+			<p>The purpose of clubs is to have extra curriculum activities.
+				We ensure that by conducting Events,Hackathons and Jams.
+			</p>
+		  </div>
+		  <div class="statsBox">
+			  <div class="box">
+				  <h2>01</h2>
+				  <h4>Events</h4>
+			  </div>
+			  <div class="box">
+				<h2>00</h2>
+				<h4>Hackathons</h4>
+			</div>
+			<div class="box">
+				<h2>01</h2>
+				<h4>Jams</h4>
+			</div>
+		  </div>
+		</div>
+	</section>
+	<!--End of stats-->
 
-        <script type="text/javascript">
-            window.addEventListener("scroll", function(){
-                var header = document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 0);
-            })
-            function toggle(){
-                var header = document.querySelector("header");
-                header.classList.toggle("active");
-            }
-        </script>
+	<!--Our Clubs-->
+	<section class="sec work" id="portfolio">
+		<div class="content">
+			<div class= "mxw800p">
+			<h3>Our Clubs</h3>
+			<p>Below are our proud clubs which are the reasons for upcoming of student talents.</p>
+		  </div>
+		  <div class="workBx">
+			  <div class="brand">
+				  <a href="#"><h2>Amalgamate</h2></a>
+			  </div>
+			  <div class="brand">
+				<a href="#"><h2>Trannas</h2></a>
+			</div>
+			<div class="brand">
+				<a href="#"><h2>Quizotics</h2></a>
+			</div>
+			<div class="brand">
+				<a href="#"><h2>Extempora</h2></a>
+			</div>
+			<div class="brand">
+				<a href="#"><h2>Madre</h2></a>
+			</div>
+			<div class="brand">
+				<a href="#"><h2>Data Analytics</h2></a>
+			</div>
+			<div class="brand">
+				<a href="#"><h2>Multimedia</h2></a>
+			</div>
+		  </div>
+		</div>
+	</section>
+	<!--End of club-->
+
+	<!--Team-->
+	<section class="sec" id="team">
+		<div class="content">
+			<div class= "mxw800p">
+			<h3>Meet the Bigbrains</h3>
+			<p>Our club presidents are the main deal when comes to organising and 
+				running the events successfully.
+			</p>
+		  </div>
+		  <div class="teamBx">
+			  <div class="member">
+				  <div class="imgBx">
+					  <img src="img/1.jpg">
+				  </div>
+				  <div class="details">
+					  <div>
+						  <h2>Name<br><span>Tag</span></h2>
+					  </div>
+				  </div>
+			  </div>
+			  <div class="member">
+				<div class="imgBx">
+					<img src="img/2.jpg">
+				</div>
+				<div class="details">
+					<div>
+						<h2>Name<br><span>Tag</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="member">
+				<div class="imgBx">
+					<img src="img/3.jpg">
+				</div>
+				<div class="details">
+					<div>
+						<h2>ram<br><span>designer</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="member">
+				<div class="imgBx">
+					<img src="img/4.jpg">
+				</div>
+				<div class="details">
+					<div>
+						<h2>Name<br><span>tag</span></h2>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</section>
+	<!--End of team-->
+
+	 <!--gallery-->
+	 <input type="radio" name="Photos" id="check1" checked>
+         <input type="radio" name="Photos" id="check2">
+         <input type="radio" name="Photos" id="check3">
+         <input type="radio" name="Photos" id="check4">
+
+	<div class="container2">
+		 <h2>Our Gallery</h2>
+		 <br>
+
+		 <div class="top-content">
+			 <h4>PHOTOS</h4>
+			 <label for="check1">ALL PHOTOS</label>
+			 <label for="check2">Amalgamate</label>
+			 <label for="check3">Quizotics</label>
+			 <label for="check4">Taranna</label>
+		 </div>
+
+		 <div class="photo-gallery">
+			<div class="pic tech">
+				 <img src="img/gallery/1.jpg">
+			</div>
+			<div class="pic tech">
+				<img src="img/gallery/2.jpg">
+			</div>
+			<div class="pic tech">
+				<img src="img/gallery/3.jpg">
+			</div>
+			<div class="pic tech">
+				<img src="img/gallery/1.jpg">
+			</div>
+			<div class="pic tech">
+			   <img src="img/gallery/2.jpg">
+			</div>
+			<div class="pic tech">
+			   <img src="img/gallery/3.jpg">
+			</div>
+			<div class="pic tech">
+				<img src="img/gallery/1.jpg">
+			</div>
+			<div class="pic tech">
+				<img src="img/gallery/2.jpg">
+			</div>
+			<div class="pic Quizotics">
+				<img src="img/gallery/3.jpg">
+			</div>
+			<div class="pic Quizotics">
+				<img src="img/gallery/1.jpg">
+			</div>
+			<div class="pic Quizotics">
+				<img src="img/gallery/2.jpg">
+			</div>
+			<div class="pic Quizotics">
+				<img src="img/gallery/3.jpg">
+			</div>
+			<div class="pic Amalgamate">
+				<img src="img/gallery/1.jpg">
+			</div>
+			<div class="pic Amalgamate">
+				<img src="img/gallery/2.jpg">
+			</div>
+			<div class="pic Amalgamate">
+				<img src="img/gallery/3.jpg">
+			</div>
+			<div class="pic Amalgamate">
+				<img src="img/gallery/1.jpg">
+			</div>
+		 </div>
+	 </div>
+<br>
+<br>
+<!--End of gallery-->
+
+	<!-- ============= Footer Start ============== -->
+		
+	<footer class="bg-dark text-white pt-5 pb-4">
+
+		<div class="container text-center text-md-left">
+	
+			<div class="row text-center text-md-left">
+	
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Department of ISE</h5>
+					<p>The department of ISE motivates all the students to adapt Hands on work experience.</p>
+					
+				</div>
+	
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Others</h5>
+				<p>
+					<a href="#" class="text-white" style="text-decoration: none;"> Research</a>
+				</p>
+				<p>
+					<a href="#" class="text-white" style="text-decoration: none;"> Achievement</a>
+				</p>
+				<p>
+					<a href="#" class="text-white" style="text-decoration: none;"> Clubs</a>
+				</p>
+				<p>
+					<a href="#" class="text-white" style="text-decoration: none;"> Portal</a>
+				</p>
+				<p>
+					<a href="#" class="text-white" style="text-decoration: none;"> COE</a>
+				</p>
+	
+				</div>
+	
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+				<p>
+					<a href="https://atria.edu/assets/pdf/Academic-calendar-2020-21-2nd-to-8th-Semester.pdf" class="text-white" style="text-decoration: none;"> Academic Calendar</a>
+				</p>
+				<p>
+					<a href="https://ait.academiaerp.com/" class="text-white" style="text-decoration: none;"> ERP</a>
+				</p>
+				<p>
+					<a href="https://atria.edu/admissions.php#overview" class="text-white" style="text-decoration: none;">Admissions</a>
+				</p>
+				<p>
+					<a href="https://atria.edu/grievance.php" class="text-white" style="text-decoration: none;"> Grievance Cell</a>
+				</p>
+				</div>
+	
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contact</h5>
+					<p>
+						<i class="fas fa-home mr-3"></i> ASKB Campus, 1st Main Rd, Ags Colony, Anandnagar, Hebbal, Bengaluru, Karnataka 560024
+					</p>
+					<p>
+						<i class="fas fa-envelope mr-3"></i> ise@atria.edu
+					</p>
+					<p>
+						<i class="fas fa-phone mr-3"></i> +91 70 9032 9032
+					</p>
+					
+				</div>
+				
+			</div>
+	
+			<hr class="mb-4">
+	
+			<div class="row align-items-center">
+	
+				<div class="col-md-7 col-lg-8">
+					<p>	Copyright ©2020 All rights reserved by:
+						<a href="#" style="text-decoration: none;">
+							<strong class="text-warning">Dept. of ISE</strong>
+						</a> | Website Designed by team <a href="#" style="text-decoration: none;">
+							<strong class="text-warning">Amalgamate</strong>
+						</a></p>
+					
+					
+				</div>
+
+				<div class="col-md-5 col-lg-4">
+					<div class="text-center text-md-right">
+	
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item">
+								<a href="https://www.facebook.com/profile.php?id=100070239374791" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/iseatria/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="www.linkedin.com/in/ISE-ATRIA-IT" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+							</li>
+						</ul>
+						
+					</div>
+					
+				</div>
+			</div>
+	
+		</div>		
+	</footer>
+  
+	<!-- ============= Footer End ============== -->
+
     </body>
 </html>
