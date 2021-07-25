@@ -16,7 +16,7 @@ body
     background-color: rgba(0, 0, 0, 0.986);
     min-height: 1000px;
 }
-/* Navigation bar*/
+/* Navigation bar */
 header
 {
     position: fixed;
@@ -124,15 +124,14 @@ header.sticky ul li a
 {
     width: 70px;
     position: absolute;
-    top: 14%;
-    left: 7%;
+    top: 3%;
+    left: 9%;
 }
 .dept1
 {
     position: absolute;
-    top: 17%;
-    left: 12%;
-
+    top: 5%;
+    left: 14%;
 }
 .bigd
 {
@@ -352,7 +351,7 @@ header ul li a
     display: flex;
     justify-content: center;
     align-items: centre;
-    padding: 40px 0;
+    padding: 0 0;
     flex-wrap: wrap;
 }
 .containerm
