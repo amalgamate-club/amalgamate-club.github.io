@@ -5,7 +5,8 @@
 }
 body{
   background-color: rgb(255, 255, 255);
-  font-family: "poppins",sans-serif;
+  /*font-family: "poppins",sans-serif;*/
+  font-famly: 'Poppins', sans-serif;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -17,16 +18,24 @@ body{
 
 .container{
   margin: 20px 60px;
-  color: rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
+  
+}
+.profile{ margin: 20px 60px;
+  color: rgb(0, 0, 0);
+  
+
 }
 .heading{
   font-size: 60px;
   color: rgb(0, 0, 0);
   text-align: center;
+  
 }
 .heading span {
   font-style: italic;
   font-size: 30px;
+
 }
 .profiles {
   display: flex;
@@ -85,13 +94,16 @@ transition: 1s ease;
 .user-name {
   margin-top: 30px;
   font-size: 35px;
+  text-shadow: 0 0 3px #a1a1a1;
+  
 }
 .profile h5 {
   font-size: 18px;
   font-weight: 100;
   letter-spacing: 3px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:'Poppins', sans-serif;
   color: rgb(0, 0, 0);
+  text-shadow: 0 0 3px #161515;
 }
 .profile p{
   font-size: 16px;
@@ -116,7 +128,7 @@ transition: 1s ease;
 @media only screen and (max-width:900px) {
   .heading {
     font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Poppins', sans-serif;
 
     color: white;
     text-align: center;
@@ -136,12 +148,12 @@ transition: 1s ease;
 html, body{
   height: 100%;
   font-weight: 800;
-  font-style: italic;
+  font-style: 'Poppins', sans-serif;
 }
 
 body{
   
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
 }
 
 svg {
@@ -150,6 +162,7 @@ svg {
     width: 500px;
     height: 200px;
     margin: 0 auto;
+    
 }
 
 .text-copy {
@@ -208,6 +221,7 @@ h1{
   font-size: 1.5em;
   font-weight:normal;
   text-align: center;
+  
 }
 
 /* title styles */
@@ -228,6 +242,7 @@ h1{
     background: rgb(255, 255, 255);
     animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
     transform: translateX(-101%);
+    
 }
 
 .home-title span::before{
@@ -267,4 +282,12 @@ img{
   width: 100px;
 
 }
-
+  .container h1 {
+   border-style: outset;
+   font-size: 2em;
+   text-shadow: 0 0 3px #a1a1a1;
+   
+}
+#foot p{
+  color: white;
+}
