@@ -1,0 +1,281 @@
+/*-----Gallery starts----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+input
+{
+    display: none;
+}
+.container2 
+{
+    width: 100%;
+    text-align: center;
+}
+.container2 h2
+{
+	color:rgba(255, 248, 248, 0.863);
+	font-size: 50px;
+	font-weight:550;
+	
+}
+.container2 h4
+{
+	color:rgba(15, 15, 15, 0.863);
+	font-size: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+	
+}
+h1
+{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+
+}
+h1::before
+{
+    content: '';
+    position: absolute;
+    width:fit-content;
+    height: 3px;
+    background-color: rgb(58, 66, 182);
+    bottom: -10px;
+    left: 50%;
+    right:50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite; 
+ 
+}
+@keyframes animate{
+
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 60%;
+
+    }
+    100%{
+        width: 100px;
+    }
+}
+.top-content{
+    background-color: rgb(172, 169, 169);
+    width: 90%;
+    margin: 0 auto 50px auto;
+    height: 60px ;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+h3{
+    height: 100%;
+    background-color: rgb(228, 228, 228);
+    line-height: 60px;
+    padding: 0 50px;
+    color: rgb(85, 83, 83);
+} 
+label
+{
+    display:inline-block;
+    height: 100%;
+    width: 100%;
+    margin: 0 10px;
+    line-height: 60px;
+    font-size: 18px;
+    color:gray;
+    cursor: pointer;
+    transition: .5s;
+}
+label:hover{
+    color: black;
+}
+.photo-gallery
+{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.pic
+{
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(163, 163, 163, 0.486);
+    cursor: pointer;
+    transition: .5s;
+}
+.pic img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+
+.pic::before
+{
+    content: "";
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color : white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: 0.2s;
+    z-index: 1;
+}
+.pic::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgba(0,0,0,0.4);
+    transition: .3s;
+}
+.pic:hover::after
+{
+    height: 100%;
+}
+.pic:hover::before
+{
+  margin-top: 0;
+  opacity: 1;  
+}
+#check1:checked ~.container2 .photo-gallery .pic
+{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+#check2:checked ~.container2 .photo-gallery .tech
+{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+
+}
+#check2:checked ~.container2 .photo-gallery .Datathon,
+#check2:checked ~.container2 .photo-gallery .tech1
+{
+    opacity: 0;
+    transform: scale(0);
+    position:absolute;
+    transition: .5s;
+}
+#check3:checked ~.container2 .photo-gallery .Datathon
+{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+
+}
+#check3:checked ~.container2 .photo-gallery .tech,
+#check3:checked ~.container2 .photo-gallery .tech1
+{
+    opacity: 0;
+    transform: scale(0);
+    position:absolute;
+    transition: .5s;
+}
+/*--section .photo-gallery .tech .active
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}-*/
+/*-----Gallery ends----*/
+
+/* ----faculty section----*/
+.teamBx
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.teamBx .member
+{
+    position: relative;
+    background: rgb(95, 90, 90);
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamBx .member .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+}
+.teamBx .member .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+.teamBx .member .details
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 125%;
+    height: 125%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 0;
+}
+.teamBx .member:hover .details
+{
+    opacity: 1;
+}
+.teamBx .member .details h2
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.teamBx .member .details h2 span
+{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+/* ----faculty section ends----*/
