@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Centre of Excellence</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="style3.css">
+        <meta charset="utf-8">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    </head>
+    <body onload="myFunction()">
+
+    <!-- ============= Pre Loader Start ============== -->
+        <div id="loading"></div>
+        <style>
+            #loading{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #fff
+            url('../img/ise.gif')
+            no-repeat center center;	
+            z-index: 99999;
+            }
+        </style>
+        <script>
+                // $(document).ready(function(){
+                    // 	$('div#loading').removeAttr('id');
+                // });
+                var preloader = document.getElementById("loading");
+                // window.addEventListener('load', function(){
+                // 	preloader.style.display = 'none';
+                // 	})
+
+                function myFunction(){
+                    preloader.style.display = 'none';
+                };
+            </script>
+    <!-- ============= Pre Loader End ============== -->
+        
+	<!-- ============= Nav Bar Start =============-->
+	<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="https://atria.edu" target="_blank" id="logo" ><img src="https://atria.edu/assets/images/logo-ait-v1.png" height="50px"></a><a class="navbar-brand" id="logo" href="../index.html">Dept. Of I S E </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+            
+    
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Research </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="../research/original.html"> Student Research </a></li>
+                    <li><a class="dropdown-item" href="../research/faculty.html"> Teacher Research </a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Achievement </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href="../achivements/index.html"> Achievement </a></li>
+                    <li><a class="dropdown-item" href="../achivements/index.html"> Student Achievement </a></li>
+                    <li><a class="dropdown-item" href="../achivements/index.html"> Teacher Achievement </a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="../clubs/index.html"  data-bs-toggle="dropdown"> Clubs </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a class="dropdown-item" href="../clubs/index.html"> Clubs </a></li>
+                        <li><a class="dropdown-item" href="#"> Amalgamate </a></li>
+                        <li><a class="dropdown-item" href="#"> Quxotics </a></li>
+                        <li><a class="dropdown-item" href="#"> Tarana </a></li>
+                    </ul>
+                </li>
+    
+                    <li class="nav-item dropdown">
+						<a class="nav-link  dropdown-toggle" href="../stu_portal/index.html" target="_blank"
+							data-bs-toggle="dropdown"> Portal </a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a class="dropdown-item" href="../stu_portal/index.html"> Portal </a></li>
+							<li><a class="dropdown-item" href="#"> CRs </a></li>
+							<li><a class="dropdown-item" href="#"> Marks </a></li>
+						</ul>
+					</li>
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#"> COE </a>
+                </li>
+
+                <li class="nav-item dropdown">
+					<a class="nav-link  dropdown-toggle" href="../alumni/index.html" target="_blank" data-bs-toggle="dropdown"> Alumni</a>
+					<ul class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="../alumni/index.html"> Alumni </a></li>
+					</ul>
+				</li>
+            </ul>
+    
+        </div> <!-- navbar-collapse.-->
+        </div> <!-- container-fluid.-->
+        </nav>
+    
+        <style>
+            body
+            {background-color: rgba(0, 0, 0, 0.986);}
+            #navbar_top{
+
+                font-size: 20px;
+            }
+    
+            #logo{
+                font-weight: 500;
+		        font-size: 20px;
+		        letter-spacing: 2px;
+            }
+    
+            .fixed-top {
+                top: -40px;
+                transform: translateY(40px);
+                transition: transform .3s;
+            }
+        </style>
+    
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                
+                window.addEventListener('scroll', function() {
+                
+                    if (window.scrollY > 200) {
+                        document.getElementById('navbar_top').classList.add('fixed-top');
+                        // add padding top to show content behind navbar
+                        navbar_height = document.querySelector('.navbar').offsetHeight;
+                        document.body.style.paddingTop = navbar_height + 'px';
+                    } else {
+                        document.getElementById('navbar_top').classList.remove('fixed-top');
+                        // remove padding top from body
+                        document.body.style.paddingTop = '0';
+                    } 
+                });
+            }); 
+        </script>
+       <!--============= Nav Bar End ==============--> 
+        <!--Banner aka the main picture-->
+
+        <section class="banner" id="home">
+            <div>
+                <img src="images/Screenshot (47).png" class="logo1" alt="">
+            </div>
+            <div class="dept1">
+				<p><span> <marquee>DEPARTMENT OF ISE </marquee></span></p>
+            </div>
+            
+            
+            <span><h2>Centre of Excellence <br>
+            Data Analytics</h2>
+						<a><button type="button" class="button"><strong><a href="#COEtext" style="color: antiquewhite;">Learn more...</a></strong></button></a></span>
+        </section>
+        <div id="COEtext">&nbsp;</div>
+        <!--End of banner-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+         <!--vision and mission-->
+         <div class="container">
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <h2>VISION</h2>
+                    <p>To be the centre of excellence in Data Analytics for encouraging inquisitiveness &
+curiosity in students and to prepare students to be experts in solving business 
+problems to help business executives in decision making, by getting well-versed 
+with well-known data analytics tools and techniques. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <h2>MISSION</h2>
+                    <p>• To prepare students to be Data Analytics experts.<br>
+                        • In solving business problem.<br>
+                        • To help business executives in decision making. <br>
+                        • Data analytics tools and techniques.<br>
+                        Training and mentoring students on 
+popular analytical tools which is an add-on to their CVs to make high calibre 
+and work-ready data analytics graduates.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <h2>TRAINING PLATFORMS</h2>
+                    <p>In each semester students are made to enroll for an online course to fade-out the gap between the industrial requirement and syllabus in their academic curriculum.
+                  Students have completed online courses on various platforms like: Coursera, NPTEL, SoloLearn, Cursa.
+                  <br>
+                    <p>Student Certificates: <a href="notifications/studenthigh-ise.pdf" target="_new" style="color: antiquewhite;">Read more...</a></p>
+                    
+                   </p>
+                </div>
+            </div>
+        </div>
+         <!--End of vision mission-->
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <!--big data-->
+       <div class="containerm">
+
+            <div style="float: left;">
+                <span><img src="images/BIGD.png" width="600px" height="550px" alt=""></span>
+            </div>
+
+            <div class="contentm" style="text-align: justify; color: azure;">
+                <h4 style="font-weight: 300;">OVERVIEW</h4>  <br>
+                <p>Big data can be applied to real-time fraud detection, complex competitive analysis, call centre optimization, consumer sentiment analysis, intelligent traffic management, and to manage smart power grids, to name only a few applications.</p>
+                <p> Big data is characterized by three primary factors: volume (too much data to handle easily); velocity (the speed of data flowing in and out makes it difficult to analyze); and variety (the range and type of data sources are too great to assimilate).</p>
+                <p>With the right analytics, big data can deliver richer insight since it draws from multiple sources and transactions to uncover hidden patterns and relationships.
+                 <a href= "notifications/overview Coe-DataAnalytics (1).pdf" target="_new" style="color: antiquewhite;">Read more...</a>
+                    
+                </p>
+            </div>
+       </div>  
+       <div>&nbsp;
+        <br>
+        </div> 
+         <!--end of overview-->
+         <style>
+             .h4{
+                 font-size: medium;
+                 font-weight: 100;
+             }
+         </style>
+
+         
+            <!--FACULTY LIST-->
+
+            <div class="hero">
+                <h1>Here to Help Students Grow</h1><br><br>
+                <span>
+                    <p style="align-items: center;">Enriching lives of students and being a support system and guiding them throught the course. We also prepare the students for Hackathons and encourage them to participate in various events and competitions. Projects are assigned to CoE-registered
+                        students and take up consultancy projects. </p></span>
+            <div class="content">
+              <div class="teamBx">
+                  <div class="member">
+                      <div class="imgBx">
+                          <img src="images/NEHA_MANGLA.jpg">
+                      </div>
+                      <div class="details">
+                          <div>
+                              <h2>Dr. Neha Mangla<br><br><span>Associate Professor<br> Dept. of ISE <br><br> Python Programming <br> Machine Learning</span></h2>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="member">
+                    <div class="imgBx">
+                        <img src="images/abhi sir.jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Abhilash<br><br><span>Associate Professor<br> Dept. of ISE <br><br>Big Data and its Significance<br> Machine Learning</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="images/Prof. Syeda Roshni Ahmed (1).jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Ms. Syeda Roshni Ahmed<br><br><span>Associate Professor<br> Dept. of ISE<br> <br>Data Mining <br> Data Warehousing</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            <!--END OF FACULTY LIST-->
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+
+          <!--STUDENTS LIST-->
+         <div class="Students">
+            <span>
+            <h1>Data Analytics Club Members</h1>
+            <br>
+            <span>
+               <p style="align-items: center;">Students of CoE would take up ISE department result
+                dataset and draw useful insights to improve the
+                functionality and performance of the department. (In
+                Summer Vacation at ATRIA Campus). CoE students would give hands-on sessions on data
+                analytics and analysis to students who are part of
+                other CoEs. </p></span>
+                <span>
+                    <ul2 style="list-style-type: none; display: inline-block; ">
+                       <li2>AMILIO MATHEW DSOUZA (1AT18IS122)</li2>
+                       <li2>VACHAN HONNUDIKE (1AT18IS109)</li2>
+                       <li2>ANAND SHANKAR (1AT18IS008)</li2>
+                       <li2>CHINMAYEE M S (1AT18IS022)</li2>
+                       <li2>BELINDA SHARYL BENJAMIN (1AT18IS016)</li2>
+                    </ul2>
+                    <ul2 style="list-style-type: none; display: inline-block;">
+                        <li2>SUJATHA M (1AT18IS103)</li2>
+                        <li2>M V SUHAS (1AT18IS046)</li2>
+                        <li2>MAHAVEER SINGH (1AT18IS047)</li2>
+                        <li2>AMRUTA ASHOK NAIK (1AT18IS004)</li2>
+                        <li2>MANJUNATH D (1AT18IS050)</li2>
+                    </ul2>
+                 <span> 
+        </span>
+           </div>
+             <!--end of STUDENTS LIST-->
+
+
+             
+            <!--News and Events-->
+            
+            <div class="news">
+                <span> 
+                <span>  <h1>News and Events</h1><br><br>
+               </span>
+       
+         
+               <div class="event-container">
+                   <h5 class="year">2019</h5>
+
+                   <div class="event">
+
+                        <div class="event-left">
+                            <div class="event-date">
+                                <div class="date">5</div>
+                                <div class="month">Apr</div>
+                            </div>
+                        </div>
+
+                        <div class="event-right">
+                            <h3 class="event-title">“DATATHON’19</h3>
+                            <div class="event-desc">PES University, Main campus had conducted a 6-hour technical event – “DATATHON’19:
+                                collect – clean – process – insights” on 5th April 2019 from 8:15 a.m. to 5:00 p.m. The aim of
+                                this data event was to create awareness in finding useful data insights by generating and visualizing
+                                patterns and applying machine learning and data mining-based algorithms. In this event, around
+                                12 students participated from the 4th, 6th and 8th semesters of the Department of Information
+                                Science and Engineering and got an idea on how to collect, pre-process, process and visualize the
+                                data</div>
+                            <div class="event-time">
+                                <img src="images/right arrow.png" alt="" /> Completed 
+                            </div>
+
+                        </div>
+                   </div>
+
+
+                   
+                   <div class="event">
+
+                    <div class="event-left">
+                        <div class="event-date">
+                            <div class="date">23</div>
+                            <div class="month">Jun</div>
+                        </div>
+                    </div>
+
+                    <div class="event-right">
+                        <h3 class="event-title">Some title</h3>
+                        <div class="event-desc">blah blahblah blahblah blahblah blahblah blahblah blah</div>
+                        <div class="event-time">
+                            <img src="images/right arrow.png" alt="" /> 10:00 am
+                        </div>
+
+                    </div>
+               </div>
+
+
+
+                               
+               <h5 class="year">2020</h5>
+               <div class="event">
+
+                <div class="event-left">
+                    <div class="event-date">
+                        <div class="date">23</div>
+                        <div class="month">Jun</div>
+                    </div>
+                </div>
+
+                <div class="event-right">
+                    <h3 class="event-title">Some title</h3>
+                    <div class="event-desc">blah blahblah blahblah blahblah blahblah blahblah blah</div>
+                    <div class="event-time">
+                        <img src="images/right arrow.png" alt="" /> 10:00 am
+                    </div>
+
+                </div>
+           </div>
+
+
+           
+           <div class="event">
+
+            <div class="event-left">
+                <div class="event-date">
+                    <div class="date">23</div>
+                    <div class="month">Jun</div>
+                </div>
+            </div>
+
+            <div class="event-right">
+                <h3 class="event-title">Some title</h3>
+                <div class="event-desc">blah blahblah blahblah blahblah blahblah blahblah blah</div>
+                <div class="event-time">
+                    <img src="images/right arrow.png" alt="" /> 10:00 am
+                </div>
+
+            </div>
+       </div>
+
+
+       <h5 class="year">2021</h5>
+       
+       <div class="event">
+
+        <div class="event-left">
+            <div class="event-date">
+                <div class="date">23</div>
+                <div class="month">Jun</div>
+            </div>
+        </div>
+
+        <div class="event-right">
+            <h3 class="event-title">Some title</h3>
+            <div class="event-desc">blah blahblah blahblah blahblah blahblah blahblah blah</div>
+            <div class="event-time">
+                <img src="images/right arrow.png" alt="" /> 10:00 am
+            </div>
+
+        </div>
+   </div>
+
+
+   
+   <div class="event">
+
+    <div class="event-left">
+        <div class="event-date">
+            <div class="date">23</div>
+            <div class="month">Jun</div>
+        </div>
+    </div>
+
+    <div class="event-right">
+        <h3 class="event-title">Some title</h3>
+        <div class="event-desc">blah blahblah blahblah blahblah blahblah blahblah blah</div>
+        <div class="event-time">
+            <img src="images/right arrow.png" alt="" /> 10:00 am
+        </div>
+
+    </div>
+</div>
+               </div>
+            </span>
+        </div>
+             <!--end of News and Events-->
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+          
+
+         <!--gallery-->
+         <input type="radio" name="Photos" id="check1" checked>
+         <input type="radio" name="Photos" id="check2">
+         <input type="radio" name="Photos" id="check3">
+         <input type="radio" name="Photos" id="check4">
+
+
+        <div class="container2">
+             <h4 style="font-weight: 500;font-size: 50px; color: rgba(240, 255, 255, 0.808);">Our Gallery</h4>
+             <br>
+
+             <div class="top-content">
+                 <h4>PHOTOS</h4>
+                 <label for="check1">ALL PHOTOS</label>
+                 <label for="check2">TECH-EVENTS</label>
+                 <label for="check3">DATATHON</label>
+                 <label for="check4">TECH-EVENTS2</label>
+             </div>
+             <section>
+
+             <div class="photo-gallery">
+                <div class="pic tech">
+                     <img src="images/1.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="images/2.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="images/3.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="images/4.png" alt="">
+                </div>
+                <div class="pic tech">
+                   <img src="images/5.png" alt="">
+                </div>
+                <div class="pic tech">
+                   <img src="images/6.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="images/7.png" alt="">
+                </div>
+                <div class="pic tech">
+                    <img src="images/8.png" alt="">
+                </div>
+                <div class="pic Datathon">
+                    <img src="images/d1.png" alt="">
+                </div>
+                <div class="pic Datathon">
+                    <img src="images/d2.png" alt="">
+                </div>
+                <div class="pic Datathon">
+                    <img src="images/d3.png" alt="">
+                </div>
+                <div class="pic Datathon">
+                    <img src="images/d4.png" alt="">
+                </div>
+             </div>
+          
+         </div>
+           <!--END OF GALLERY -->
+    <br>
+   <br>
+   
+
+ 	<!-- ============= Footer Start ============== -->
+		
+	<footer class="bg-dark text-white pt-5 pb-4">
+
+		<div class="container text-center text-md-left">
+	
+			<div class="row text-center text-md-left">
+	
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Department of ISE</h5>
+					<p>The department of ISE motivates all the students to adapt Hands on work experience.</p>
+          <img src="../img/ise_logo.png" width="150px" height="150px">
+					
+				</div>
+	
+        <!-- Variable-->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Others</h5>
+				<p>
+					<a href="../research/original.html" class="text-white" style="text-decoration: none;"> Research</a>
+				</p>
+				<p>
+					<a href="../achivements/index.html" class="text-white" style="text-decoration: none;"> Achievement</a>
+				</p>
+				<p>
+					<a href="../clubs/index.html" class="text-white" style="text-decoration: none;"> Clubs</a>
+				</p>
+				<p>
+					<a href="../stu_portal/ankit/index.html" class="text-white" style="text-decoration: none;"> Portal</a>
+				</p>
+				<p>
+					<a href="../COEF/index.html" class="text-white" style="text-decoration: none;"> COE</a>
+				</p>
+	
+				</div>
+	
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+				<p>
+					<a href="https://atria.edu/assets/pdf/Academic-calendar-2020-21-2nd-to-8th-Semester.pdf" class="text-white" style="text-decoration: none;"> Academic Calendar</a>
+				</p>
+				<p>
+					<a href="https://ait.academiaerp.com/" class="text-white" style="text-decoration: none;"> ERP</a>
+				</p>
+				<p>
+					<a href="https://atria.edu/admissions.php#overview" class="text-white" style="text-decoration: none;">Admissions</a>
+				</p>
+				<p>
+					<a href="https://atria.edu/grievance.php" class="text-white" style="text-decoration: none;"> Grievance Cell</a>
+				</p>
+				</div>
+	
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contact</h5>
+					<p>
+						<i class="fas fa-home mr-3"></i> ASKB Campus, 1st Main Rd, Ags Colony, Anandnagar, Hebbal, Bengaluru, Karnataka 560024
+					</p>
+					<p>
+						<i class="fas fa-envelope mr-3"></i> ise@atria.edu
+					</p>
+					<p>
+						<i class="fas fa-phone mr-3"></i> +91 70 9032 9032
+					</p>
+					
+				</div>
+				
+			</div>
+	
+			<hr class="mb-4">
+	
+			<div class="row align-items-center">
+	
+				<div class="col-md-7 col-lg-8">
+					<p>	Copyright ©2021 All rights reserved by:
+						<a href="#" style="text-decoration: none;">
+							<strong class="text-warning">Dept. of ISE</strong>
+						</a> | Website Designed by team <a href="#" style="text-decoration: none;">
+							<strong class="text-warning">Amalgamate</strong>
+						</a></p>
+					
+					
+				</div>
+
+				<div class="col-md-5 col-lg-4">
+					<div class="text-center text-md-right">
+	
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item">
+								<a href="https://www.facebook.com/profile.php?id=100070239374791" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/iseatria/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://github.com/amalgamate-club" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-github"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.linkedin.com/in/ISE-ATRIA-IT/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+							</li>
+						</ul>
+						
+					</div>
+					
+				</div>
+			</div>
+	
+		</div>
+		
+	</footer>
+  
+	<!-- ============= Footer End ============== -->
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    function toggle(){
+        var header = document.querySelector("header");
+        header.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
